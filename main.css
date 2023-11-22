@@ -81,6 +81,7 @@ body {
   background: transparent;
   color: #ffffff;
   font-size: 1.8rem;
+  touch-action: manipulation;
 }
 .button--primary {
   text-transform: uppercase;
