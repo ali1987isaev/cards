@@ -264,6 +264,7 @@ body {
 }
 .card__delete.confirm {
   color: #BE3144;
+  width: 7.9rem;
 }
 .card__delete.confirm .card__delete--confirm {
   min-width: -moz-max-content;
