@@ -50,7 +50,7 @@ class Cards {
   initAddCard() {
     this.addCard.addEventListener('click', () => {
       this.addCardPanel.classList.add('open')
-      this.form.elements['english'].focus();
+      // this.form.elements['english'].focus();
     });
     this.addCardPanelClose.addEventListener('click', () => {
       this.addCardPanel.classList.remove('open')
