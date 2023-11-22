@@ -24,6 +24,7 @@ body {
 
 .main-footer {
   display: flex;
+  gap: 1rem;
 }
 
 #main {
@@ -70,6 +71,7 @@ body {
 
 .counter {
   text-align: center;
+  font-size: 2.5rem;
 }
 
 .button {
@@ -85,8 +87,13 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     width: 100%;
-    border: 1px solid #ffffff;
+    border: 1px solid #3282B8;
     padding: 2rem;
+    background-color: #3282B8;
+
+    &:active {
+      background-color: #525252;
+    }
   }
 
   &--secondary {
@@ -127,10 +134,12 @@ body {
 
     .ticker {
       text-transform: uppercase;
+      font-weight: 700;
       position: absolute;
       left: 0;
       white-space: nowrap;
       animation: 20s ticker infinite linear;
+      font-size: 2rem;
     }
   }
 
@@ -181,15 +190,13 @@ body {
 
 @keyframes ticker {
   0% {
-    transform: translate(100%, 0);
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
   }
 
   100% {
-    transform: translate(0, 0);
-  }
-
-  100% {
-    transform: translate(-100%, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 }
 
@@ -257,14 +264,36 @@ body {
   text-align: center;
 }
 .card__back {
-  background-color: #0F4C75;
+  background-color: #525252;
   color: #ffffff;
   transform: rotateY(180deg);
 }
 .card__delete {
   position: absolute;
+  display: flex;
+  align-items: center;
+  gap: .1rem;
+  overflow: hidden;
   top: 2rem;
   right: 2rem;
+
+  &.confirm {
+    color: #BE3144;
+
+    & .card__delete--confirm {
+      min-width: max-content;
+      height: auto;
+      visibility: visible;
+    }
+  }
+
+  & .card__delete--confirm {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
 
   & svg {
     width: 3rem;
@@ -274,25 +303,27 @@ body {
 .voice {
   border-radius: 50%;
   border: 1px solid #ffffff;
-  width: 4rem;
-  height: 4rem;
+  width: 8rem;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #525252;
 
   & svg {
     width: 3rem;
   }
 }
-// .card__word {
-//   font-size: 24px;
-//   overflow-wrap: anywhere;
-// }
-// .card__expression {
-//   font-size: 18px;
-//   color: #282A3A;
-// }
+
+.card__expression {
+  font-size: 1.5rem;
+}
 /* CARD */
 
-
+.logo {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+  opacity: .1;
+}
 

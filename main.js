@@ -58,6 +58,13 @@ class Cards {
     this.form.addEventListener('submit', (e) => {
       e.preventDefault();
 
+      if (
+        e.target.elements['english'].value.trim() === ''
+        || e.target.elements['translate'].value.trim() === ''
+      ) {
+        return;
+      };
+
       this.createCard({
         id: crypto.randomUUID(),
         english: e.target.elements['english'].value,
@@ -68,12 +75,19 @@ class Cards {
       this.clearForm(e.target.elements);
     })
     this.mainCard.addEventListener('click', (e) => {
+      const deleteButton = document.querySelector('.card__delete');
+
       if (
         e.target.classList.contains('card__delete')
         || e.target.parentElement.classList.contains('card__delete')
         || e.target.parentElement.parentElement.classList.contains('card__delete')
       ) {
-        this.removeCard();
+        if (deleteButton.classList.contains('confirm')) {
+          this.removeCard();
+          deleteButton.classList.remove('confirm')
+          return;
+        }
+        deleteButton.classList.add('confirm')
         return;
       }
 
@@ -85,6 +99,7 @@ class Cards {
         this.generateVoiceOutput()
         return
       }
+      if (deleteButton.classList.contains('confirm')) deleteButton.classList.remove('confirm');
       this.mainCard.classList.toggle('card__flipped');
     })
     this.prev.addEventListener('click', () => {
