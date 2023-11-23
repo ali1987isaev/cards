@@ -135,7 +135,7 @@ class Cards {
     this.translate.textContent = this.data[this.index].translate;
     this.counter.textContent = this.index + 1;
 
-    setTimeout(() => this.mainCard.classList.remove('rendered'), 500);
+    setTimeout(() => this.mainCard.classList.remove('rendered'), 200);
   }
 
   createCard(data) {
