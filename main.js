@@ -118,6 +118,7 @@ class Cards {
   }
 
   renderCard(type = null) {
+    this.mainCard.classList.add('rendered')
     const lastIndex = this.data.length - 1;
 
     if (type === 'delete') {
@@ -133,6 +134,8 @@ class Cards {
     this.example.textContent = this.data[this.index].example;
     this.translate.textContent = this.data[this.index].translate;
     this.counter.textContent = this.index + 1;
+
+    setTimeout(() => this.mainCard.classList.remove('rendered'), 500);
   }
 
   createCard(data) {
