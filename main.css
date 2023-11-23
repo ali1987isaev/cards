@@ -326,7 +326,7 @@ body {
 .banner {
   padding: 2rem;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   color: #313131;
 }
 .banner > span {
