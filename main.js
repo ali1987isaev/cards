@@ -118,7 +118,7 @@ class Cards {
   }
 
   renderCard(type = null) {
-    this.mainCard.classList.add('rendered')
+    this.mainCard.classList.add('rendered');
     const lastIndex = this.data.length - 1;
 
     if (type === 'delete') {
