@@ -29,6 +29,7 @@ body {
 
 #main {
   flex: 1;
+  flex-direction: column;
   display: flex;
   padding: 2rem;
 }
@@ -265,36 +266,6 @@ body {
   background-color: #525252;
   color: #ffffff;
   transform: rotateY(180deg);
-}
-
-.card__delete {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 0.1rem;
-  overflow: hidden;
-  top: 2rem;
-  right: 2rem;
-}
-.card__delete.confirm {
-  color: #FF4C29;
-  width: 7.9rem;
-}
-.card__delete.confirm .card__delete--confirm {
-  min-width: -moz-max-content;
-  min-width: max-content;
-  height: auto;
-  visibility: visible;
-}
-.card__delete .card__delete--confirm {
-  width: 0px;
-  height: 0px;
-  visibility: hidden;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-}
-.card__delete svg {
-  width: 3rem;
 }
 
 .voice {
