@@ -8,5 +8,35 @@
     "english": "journey",
     "translate": "путешествие",
     "example": "Our English journey starts today."
+  },
+  {
+    "english": "pull",
+    "translate": "тянуть",
+    "example": "Please pull the door to open it."
+  },
+  {
+    "english": "shadow",
+    "translate": "тень",
+    "example": "My shadow follows me when I walk in the sun."
+  },
+  {
+    "english": "sharpener",
+    "translate": "точилка",
+    "example": "I use a sharpener to make my pencil sharp."
+  },
+  {
+    "english": "then",
+    "translate": "затем, тогда, потом",
+    "example": "Finish your homework, then you can play."
+  },
+  {
+    "english": "still",
+    "translate": "до сих пор, по-прежнему, всё ещё",
+    "example": "He is still waiting for the bus."
+  },
+  {
+    "english": "too",
+    "translate": "тоже, также",
+    "example": "I want to play outside too."
   }
 ]
