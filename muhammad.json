@@ -38,5 +38,20 @@
     "english": "too",
     "translate": "тоже, также",
     "example": "I want to play outside too."
+  },
+  {
+    "english": "research",
+    "translate": "исследование",
+    "example": "We did a small research project in class."
+  },
+  {
+    "english": "schedule",
+    "translate": "расписание",
+    "example": "I look at my schedule to see my next lesson."
+  },
+  {
+    "english": "notebook",
+    "translate": "тетрадь",
+    "example": "I write my homework in my notebook."
   }
 ]
