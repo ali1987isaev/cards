@@ -1,0 +1,192 @@
+[
+  {
+    "id": "education",
+    "term": "education",
+    "translation": "образование",
+    "definition": "",
+    "examples": [
+      "Education helps people find better jobs."
+    ],
+    "notes": "",
+    "level": "",
+    "category": "General"
+  },
+  {
+    "id": "journey",
+    "term": "journey",
+    "translation": "путешествие",
+    "definition": "",
+    "examples": [
+      "Our English journey starts today."
+    ],
+    "notes": "",
+    "level": "",
+    "category": "General"
+  },
+  {
+    "id": "to-process",
+    "term": "to process",
+    "translation": "обрабатывать",
+    "definition": "",
+    "examples": [
+      "We will process all the applications within two days."
+    ],
+    "notes": "",
+    "level": "",
+    "category": "General"
+  },
+  {
+    "id": "dedicate",
+    "term": "dedicate",
+    "translation": "посвятить, посвящать",
+    "definition": "",
+    "examples": [
+      "I dedicate my first novel to my father."
+    ],
+    "notes": "",
+    "level": "",
+    "category": "General"
+  },
+  {
+    "id": "justice",
+    "term": "justice",
+    "translation": "справедливость, правосудие, юстиция",
+    "definition": "",
+    "examples": [
+      "He dedicated his life to fighting for justice."
+    ],
+    "notes": "",
+    "level": "",
+    "category": "General"
+  },
+  {
+    "id": "mercy",
+    "term": "mercy",
+    "translation": "милость, милосердие, сострадание",
+    "definition": "",
+    "examples": [
+      "Volunteer work requires mercy and compassion."
+    ],
+    "notes": "",
+    "level": "",
+    "category": "General"
+  },
+  {
+    "id": "compassion",
+    "term": "compassion",
+    "translation": "сострадание, сочувствие",
+    "definition": "",
+    "examples": [
+      "Volunteer work requires mercy and compassion."
+    ],
+    "notes": "",
+    "level": "",
+    "category": "General"
+  },
+  {
+    "id": "wholesome",
+    "term": "wholesome",
+    "translation": "полноценный, здоровый",
+    "definition": "",
+    "examples": [
+      "My mother always buys fresh and wholesome food."
+    ],
+    "notes": "",
+    "level": "",
+    "category": "General"
+  },
+  {
+    "id": "admit",
+    "term": "admit",
+    "translation": "допускать что-л",
+    "definition": "",
+    "examples": [
+      "I admit that I was wrong."
+    ],
+    "notes": "",
+    "level": "",
+    "category": "General"
+  },
+  {
+    "id": "research",
+    "term": "research",
+    "translation": "исследование",
+    "definition": "",
+    "examples": [
+      "We did a small research project in class."
+    ],
+    "notes": "",
+    "level": "",
+    "category": "General"
+  },
+  {
+    "id": "piety",
+    "term": "piety",
+    "translation": "благочестие, набожность, богобоязненность",
+    "definition": "Deep respect for God and a sincere desire to do what is right.",
+    "examples": [
+      "Piety is shown not only in worship but also in good character.",
+      "His piety inspired many people around him.",
+      "She tried to live a life of piety and kindness."
+    ],
+    "notes": "Often used in religious contexts to describe devotion and righteous behavior.",
+    "level": "C1",
+    "category": "Religion"
+  },
+  {
+    "id": "belong-to",
+    "term": "belong to",
+    "translation": "принадлежать",
+    "definition": "To be owned by someone or to be a member of a group.",
+    "examples": [
+      "This book belongs to my brother.",
+      "These keys belong to me.",
+      "She belongs to a local sports club."
+    ],
+    "notes": "Always followed by 'to'.",
+    "level": "B1",
+    "category": "General"
+  },
+  {
+    "id": "honorable",
+    "term": "honorable",
+    "translation": "почётный, достойный уважения, благородный",
+    "definition": "Deserving respect because of honesty, integrity, or good actions.",
+    "examples": [
+      "He is an honorable man who always keeps his promises.",
+      "Helping others is an honorable thing to do.",
+      "She made an honorable decision."
+    ],
+    "notes": "British spelling: honourable.",
+    "level": "B2",
+    "category": "Character"
+  },
+  {
+    "id": "wealth",
+    "term": "wealth",
+    "translation": "богатство, состояние, достаток",
+    "definition": "A large amount of money, possessions, or valuable resources.",
+    "examples": [
+      "Wealth alone does not guarantee happiness.",
+      "He accumulated great wealth through his business.",
+      "Good health is a form of wealth."
+    ],
+    "notes": "Usually an uncountable noun.",
+    "level": "B2",
+    "category": "General"
+  },
+  {
+    "id": "consider",
+    "term": "consider",
+    "translation": "считать, рассматривать, обдумывать",
+    "definition": "To think carefully about something or to regard something in a particular way.",
+    "examples": [
+      "Please consider all the options before making a decision.",
+      "I am considering changing my job.",
+      "Many people consider him an excellent teacher."
+    ],
+    "notes": "Can mean both 'think about' and 'regard as'.",
+    "level": "B1",
+    "category": "General"
+  }
+]

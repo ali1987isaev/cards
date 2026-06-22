@@ -2,86 +2,120 @@
 <html lang="en" translate="no">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#101827">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="main.css">
   <script src="./main.js" defer></script>
-  <title>Cards</title>
+  <title>English Cards</title>
 </head>
 <body>
-  <header class="header">
-    <div class="logo">Created by Ali</div>
-    <button
-      data-add-card
-      class="button button--secondary"
-      type="button"
-    >Choose person</button>
-  </header>
-  <main id="main">
-    <h2 class="cards-title" data-cards-title></h2>
-    <section class="cards-container hidden" data-cards>
-      <div class="card" data-card>
-        <div class="card__inner">
-          <div class="card__front">
-            <p class="card__word notranslate" data-card-en></p>
-            <p class="card__expression notranslate" data-card-ex></p>
-            <button class="button voice" type="button" data-generate-voice-output>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
-              </svg>
-            </button>
-          </div>
-          <div class="card__back">
-            <p class="card__word notranslate" data-card-tr></p>
-          </div>
-        </div>
+  <div class="app-shell">
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">English Cards</p>
+        <h1>Practice in context</h1>
       </div>
-      <div class="counter" data-counter></div>
-    </section>
-    <section class="no-cards" data-no-cards>
-      <h2>You don't have any cards yet!</h2>
-    </section>
-  </main>
-  <footer class="main-footer hidden" data-main-footer>
-    <button type="button" class="button button--primary" data-prev>prev</button>
-    <button type="button" class="button button--primary" data-next>next</button>
-  </footer>
-  <section data-add-card-panel>
-    <header class="header">
-      <div class="logo">Created by Ali</div>
-      <button
-        data-add-card-panel-close
-        class="button button--secondary"
-        type="button"
-      >Close</button>
+      <button class="icon-button" type="button" data-open-library aria-label="Choose cards">☰</button>
     </header>
-    <main>
-      <form data-add-card-form>
-        <div class="input-container">
-          <label class="sr-only" for="english">English</label>
-          <input type="text" id="english" placeholder="English">
-        </div>
-        <div class="input-container">
-          <label class="sr-only" for="translate">Translate</label>
-          <input type="text" id="translate" placeholder="Translate">
-        </div>
-        <div class="input-container">
-          <label class="sr-only" for="example">Example</label>
-          <input type="text" id="example" placeholder="Example">
-        </div>
-        <button class="button button--primary" type="submit">
-          create new card
-        </button>
-      </form>
+
+    <main class="app-main">
+      <section class="stats-grid" aria-label="Learning progress">
+        <article class="stat-card">
+          <span data-total-cards>0</span>
+          <small>cards</small>
+        </article>
+        <article class="stat-card">
+          <span data-mastered-cards>0</span>
+          <small>mastered</small>
+        </article>
+        <article class="stat-card">
+          <span data-review-cards>0</span>
+          <small>review</small>
+        </article>
+      </section>
+
+      <section class="toolbar" aria-label="Practice mode">
+        <button class="chip active" type="button" data-mode="all">All</button>
+        <button class="chip" type="button" data-mode="review">Review</button>
+        <button class="chip" type="button" data-mode="new">New</button>
+        <button class="chip" type="button" data-mode="hard">Hard</button>
+      </section>
+
+      <section class="card-stage" data-card-stage>
+        <article class="study-card" data-card>
+          <div class="card-topline">
+            <span class="pill" data-card-type>Word</span>
+            <span class="counter" data-counter>0 / 0</span>
+          </div>
+
+          <div class="term-row">
+            <h2 class="term notranslate" data-term></h2>
+            <button class="voice-button" type="button" data-speak-term aria-label="Play word">🔊</button>
+          </div>
+
+          <p class="hint" data-hint>Remember the meaning first. Tap the card only when you are ready.</p>
+
+          <div class="front-context">
+            <span class="front-label">Context</span>
+            <p data-front-example></p>
+            <button class="mini-voice" type="button" data-speak-example>Listen</button>
+          </div>
+
+          <div class="answer" data-answer hidden>
+            <p class="translation notranslate" data-translation></p>
+            <p class="definition" data-definition></p>
+
+            <div class="examples" data-examples></div>
+
+            <div class="extra" data-extra></div>
+          </div>
+        </article>
+
+        <section class="empty-state hidden" data-empty-state>
+          <h2>No cards here yet</h2>
+          <p>Choose another mode or add more cards to your JSON files.</p>
+        </section>
+      </section>
     </main>
-    <section class="banner" data-banner>
-      the only thing that doesn’t weigh you down on your life’s journey is <span>SKILLS</span>
-    </section>
-    <footer>
-      <p class="ticker">
-        <span>Every new English word takes you closer to your goal, just keep doing it every day !</span>
-      </p>
+
+    <footer class="app-footer">
+      <button class="button secondary" type="button" data-prev>Previous</button>
+      <button class="button" type="button" data-flip>Show answer</button>
+      <button class="button secondary" type="button" data-next>Next</button>
     </footer>
-  </section>
+
+    <section class="review-actions hidden" data-review-actions>
+      <button class="review-button hard" type="button" data-rate="hard">Hard</button>
+      <button class="review-button again" type="button" data-rate="again">Again</button>
+      <button class="review-button good" type="button" data-rate="good">Good</button>
+      <button class="review-button easy" type="button" data-rate="easy">Easy</button>
+    </section>
+  </div>
+
+  <aside class="library-panel" data-library-panel aria-hidden="true">
+    <div class="panel-header">
+      <div>
+        <p class="eyebrow">Choose cards</p>
+        <h2>What do you want to practice?</h2>
+      </div>
+      <button class="icon-button" type="button" data-close-library aria-label="Close">×</button>
+    </div>
+
+    <div class="library-list">
+      <button class="library-item active" type="button" data-set="words">
+        <strong>Words</strong>
+        <span>Single words with meaning and examples.</span>
+      </button>
+      <button class="library-item" type="button" data-set="expressions">
+        <strong>Expressions</strong>
+        <span>Useful phrases, work sentences and natural English.</span>
+      </button>
+    </div>
+
+    <div class="panel-note">
+      <strong>Tip:</strong> first try to remember the meaning from the English side. Open the answer only after you make a guess.
+    </div>
+  </aside>
 </body>
 </html>

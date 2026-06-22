@@ -1,225 +1,345 @@
-class Cards {
+class EnglishCardsApp {
   constructor() {
-    // Core DOM nodes
-    this.container = document.querySelector('[data-cards]');
-    this.mainFooter = document.querySelector('[data-main-footer]');
-    this.noCards = document.querySelector('[data-no-cards]');
-    this.addCard = document.querySelector('[data-add-card]');
-    this.addCardPanel = document.querySelector('[data-add-card-panel]');
-    this.addCardPanelClose = document.querySelector('[data-add-card-panel-close]');
-    this.form = document.querySelector('[data-add-card-form]');
-    this.mainCard = document.querySelector('[data-card]');
-    this.english = document.querySelector('[data-card-en]');
-    this.example = document.querySelector('[data-card-ex]');
-    this.translate = document.querySelector('[data-card-tr]');
-    this.prev = document.querySelector('[data-prev]');
-    this.next = document.querySelector('[data-next]');
-    this.counter = document.querySelector('[data-counter]');
-    this.voiceButton = document.querySelector('[data-generate-voice-output]');
+    this.sets = {
+      words: { label: 'Words', file: './words.json', type: 'word' },
+      expressions: { label: 'Expressions', file: './expressions.json', type: 'expression' }
+    };
 
-    // Title above the cards with current person name
-    this.setTitle = document.querySelector('[data-cards-title]');
-    if (!this.setTitle && this.container && this.container.parentElement) {
-      // If you didn't add it in HTML, create it dynamically
-      this.setTitle = document.createElement('h2');
-      this.setTitle.className = 'cards-title';
-      this.setTitle.dataset.cardsTitle = '';
-      this.container.parentElement.insertBefore(this.setTitle, this.container);
-    }
-
-    // Replace "Add card" label => we now choose a person
-    if (this.addCard) {
-      this.addCard.textContent = 'Choose person';
-    }
-
-    // All available people / JSON files
-    // IMPORTANT: adjust `file` paths to match where you actually put the JSON files
-    this.people = [
-      { key: 'ali', label: 'Ali', file: './ali.json' },
-      { key: 'amina', label: 'Amina', file: './amina.json' },
-      { key: 'yusuf', label: 'Yusuf', file: './yusuf.json' },
-      { key: 'muhammad', label: 'Muhammad', file: './muhammad.json' },
-      { key: 'malik', label: 'Malik', file: './malik.json' }
-    ];
-
-    // Runtime state
-    this.data = [];            // current cards list (from selected JSON)
-    this.currentSetKey = null; // which person is selected
-    this.initialState = true;
+    this.storageKey = 'english-cards-progress-v3';
+    this.activeSet = localStorage.getItem('english-cards-active-set') || 'words';
+    this.mode = 'all';
+    this.cards = [];
+    this.filteredCards = [];
     this.index = 0;
+    this.isRevealed = false;
+    this.progress = this.readProgress();
+
+    this.nodes = {
+      panel: document.querySelector('[data-library-panel]'),
+      openLibrary: document.querySelector('[data-open-library]'),
+      closeLibrary: document.querySelector('[data-close-library]'),
+      setButtons: document.querySelectorAll('[data-set]'),
+      modeButtons: document.querySelectorAll('[data-mode]'),
+      totalCards: document.querySelector('[data-total-cards]'),
+      masteredCards: document.querySelector('[data-mastered-cards]'),
+      reviewCards: document.querySelector('[data-review-cards]'),
+      card: document.querySelector('[data-card]'),
+      emptyState: document.querySelector('[data-empty-state]'),
+      cardType: document.querySelector('[data-card-type]'),
+      counter: document.querySelector('[data-counter]'),
+      term: document.querySelector('[data-term]'),
+      hint: document.querySelector('[data-hint]'),
+      frontExample: document.querySelector('[data-front-example]'),
+      answer: document.querySelector('[data-answer]'),
+      translation: document.querySelector('[data-translation]'),
+      definition: document.querySelector('[data-definition]'),
+      examples: document.querySelector('[data-examples]'),
+      extra: document.querySelector('[data-extra]'),
+      speakTerm: document.querySelector('[data-speak-term]'),
+      speakExample: document.querySelector('[data-speak-example]'),
+      prev: document.querySelector('[data-prev]'),
+      next: document.querySelector('[data-next]'),
+      flip: document.querySelector('[data-flip]'),
+      reviewActions: document.querySelector('[data-review-actions]'),
+      rateButtons: document.querySelectorAll('[data-rate]')
+    };
   }
 
-  init() {
-    this.buildPeopleList();    // build list of persons in the side panel
-    this.initChoosePanel();    // open/close panel events
-    this.initCardInteractions(); // flip/prev/next/voice
-    this.toggleMode();         // show empty state initially
+  async init() {
+    this.bindEvents();
+    await this.loadSet(this.activeSet);
   }
 
-  // Build list of people inside the slide-in panel
-  buildPeopleList() {
-    if (!this.form) return;
+  bindEvents() {
+    this.nodes.openLibrary?.addEventListener('click', () => this.openPanel());
+    this.nodes.closeLibrary?.addEventListener('click', () => this.closePanel());
 
-    // Clear the old "add card" form UI completely
-    this.form.innerHTML = '';
+    this.nodes.setButtons.forEach((button) => {
+      button.addEventListener('click', () => this.loadSet(button.dataset.set));
+    });
 
-    const title = document.createElement('h2');
-    title.className = 'choose-person-title';
-    title.textContent = 'Choose whose cards you want to practice';
-    this.form.appendChild(title);
+    this.nodes.modeButtons.forEach((button) => {
+      button.addEventListener('click', () => this.setMode(button.dataset.mode));
+    });
 
-    const list = document.createElement('div');
-    list.className = 'person-list';
-    this.form.appendChild(list);
+    this.nodes.card?.addEventListener('click', (event) => {
+      if (event.target.closest('button')) return;
+      this.toggleAnswer();
+    });
 
-    this.people.forEach(person => {
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'button button--primary person-button';
-      btn.textContent = person.label;
-      btn.addEventListener('click', () => this.handlePersonClick(person));
-      list.appendChild(btn);
+    this.nodes.flip?.addEventListener('click', () => this.toggleAnswer());
+    this.nodes.prev?.addEventListener('click', () => this.goToCard(this.index - 1));
+    this.nodes.next?.addEventListener('click', () => this.goToCard(this.index + 1));
+    this.nodes.speakTerm?.addEventListener('click', () => this.speak(this.currentCard?.term));
+    this.nodes.speakExample?.addEventListener('click', () => this.speak(this.currentCard?.frontExample));
+
+    this.nodes.rateButtons.forEach((button) => {
+      button.addEventListener('click', () => this.rateCard(button.dataset.rate));
     });
   }
 
-  initChoosePanel() {
-    if (this.addCard) {
-      this.addCard.addEventListener('click', () => {
-        this.addCardPanel?.classList.add('open');
-      });
-    }
+  async loadSet(setKey) {
+    const set = this.sets[setKey] || this.sets.words;
 
-    if (this.addCardPanelClose) {
-      this.addCardPanelClose.addEventListener('click', () => {
-        this.addCardPanel?.classList.remove('open');
-      });
-    }
-  }
-
-  initCardInteractions() {
-    if (!this.mainCard) return;
-
-    this.mainCard.addEventListener('click', (e) => {
-      // Voice button
-      if (
-        e.target.classList.contains('voice') ||
-        e.target.parentElement?.classList.contains('voice') ||
-        e.target.parentElement?.parentElement?.classList.contains('voice')
-      ) {
-        this.generateVoiceOutput();
-        return;
-      }
-
-      // Just flip card
-      this.mainCard.classList.toggle('card__flipped');
-    });
-
-    this.prev?.addEventListener('click', () => {
-      this.index--;
-      this.renderCard();
-    });
-
-    this.next?.addEventListener('click', () => {
-      this.index++;
-      this.renderCard();
-    });
-  }
-
-  async handlePersonClick(person) {
     try {
-      // Load JSON for selected person
-      const response = await fetch(person.file, { cache: 'no-cache' });
-      if (!response.ok) {
-        throw new Error(`Failed to load ${person.file}`);
-      }
+      const response = await fetch(set.file, { cache: 'no-cache' });
+      if (!response.ok) throw new Error(`Cannot load ${set.file}`);
 
-      const json = await response.json();
-      if (!Array.isArray(json) || !json.length) {
-        throw new Error('JSON file is empty or has wrong format');
-      }
-
-      // Expecting array of objects with: english, translate, example
-      this.data = json;
-      this.currentSetKey = person.key;
+      const cards = await response.json();
+      this.activeSet = setKey;
+      this.cards = this.normalizeCards(cards, set.type);
       this.index = 0;
-      this.initialState = true; // force toggleMode to treat this as a fresh state
+      this.isRevealed = false;
 
-      if (this.setTitle) {
-        this.setTitle.textContent = `${person.label}'s cards`;
-      }
-
-      this.addCardPanel?.classList.remove('open');
-      this.toggleMode();
-    } catch (err) {
-      console.error(err);
-      alert(`Cannot load cards for ${person.label}. Check JSON path & format.`);
+      localStorage.setItem('english-cards-active-set', setKey);
+      this.updateActiveSetButton();
+      this.applyFilter();
+      this.closePanel();
+    } catch (error) {
+      console.error(error);
+      alert('Cards cannot be loaded. Please check the JSON file.');
     }
   }
 
-  toggleMode() {
-    if (this.data && this.data.length > 0 && this.initialState) {
-      this.container?.classList.remove('hidden');
-      this.noCards?.classList.add('hidden');
-      this.initialState = false;
-      this.renderCard();
-      this.mainFooter?.classList.remove('hidden');
-    } else if (!this.data || !this.data.length) {
-      this.initialState = true;
-      this.container?.classList.add('hidden');
-      this.noCards?.classList.remove('hidden');
-      this.mainFooter?.classList.add('hidden');
+  normalizeCards(cards, fallbackType) {
+    if (!Array.isArray(cards)) return [];
 
-      // Optional: tweak empty message
-      const header = this.noCards?.querySelector('h2');
-      if (header) {
-        header.textContent = 'Choose a person to start practicing cards';
-      }
+    return cards.map((card, cardIndex) => {
+      const term = card.term || card.english || '';
+      const id = card.id || this.slugify(term) || `${fallbackType}-${cardIndex}`;
+      const examples = Array.isArray(card.examples)
+        ? card.examples.filter(Boolean)
+        : [card.example].filter(Boolean);
+
+      return {
+        id,
+        type: card.type || fallbackType,
+        term,
+        translation: card.translation || card.translate || '',
+        definition: card.definition || '',
+        examples,
+        frontExample: card.frontExample || examples[0] || '',
+        notes: card.notes || '',
+        level: card.level || '',
+        category: card.category || 'General'
+      };
+    }).filter((card) => card.term);
+  }
+
+  applyFilter() {
+    const now = Date.now();
+
+    this.filteredCards = this.cards.filter((card) => {
+      const state = this.getCardState(card.id);
+      if (this.mode === 'review') return state.nextReview <= now;
+      if (this.mode === 'new') return state.repetitions === 0;
+      if (this.mode === 'hard') return state.lastRating === 'hard' || state.lastRating === 'again';
+      return true;
+    });
+
+    if (this.index >= this.filteredCards.length) this.index = 0;
+    this.render();
+  }
+
+  setMode(mode) {
+    this.mode = mode;
+    this.index = 0;
+    this.isRevealed = false;
+
+    this.nodes.modeButtons.forEach((button) => {
+      button.classList.toggle('active', button.dataset.mode === mode);
+    });
+
+    this.applyFilter();
+  }
+
+  render() {
+    this.updateStats();
+
+    if (!this.filteredCards.length) {
+      this.nodes.card?.classList.add('hidden');
+      this.nodes.emptyState?.classList.remove('hidden');
+      this.nodes.reviewActions?.classList.add('hidden');
+      this.nodes.counter.textContent = `0 / ${this.cards.length}`;
+      return;
+    }
+
+    this.nodes.card?.classList.remove('hidden');
+    this.nodes.emptyState?.classList.add('hidden');
+
+    const card = this.currentCard;
+    const state = this.getCardState(card.id);
+
+    this.nodes.card.classList.toggle('is-revealed', this.isRevealed);
+    this.nodes.cardType.textContent = `${this.isRevealed ? 'Back' : 'Front'} · ${this.sets[this.activeSet].label}${card.level ? ` · ${card.level}` : ''}`;
+    this.nodes.counter.textContent = `${this.index + 1} / ${this.filteredCards.length}`;
+    this.nodes.term.textContent = card.term;
+    this.nodes.translation.textContent = card.translation;
+    this.nodes.definition.textContent = card.definition || 'Try to understand it from the example sentence.';
+    this.nodes.hint.textContent = this.isRevealed
+      ? 'Check the meaning, read examples aloud, then rate the card.'
+      : 'Remember the meaning first. Tap the card only when you are ready.';
+    this.nodes.frontExample.textContent = card.frontExample || 'No context sentence yet. Add one example to this card later.';
+    this.nodes.answer.hidden = !this.isRevealed;
+    this.nodes.flip.textContent = this.isRevealed ? 'Hide answer' : 'Show answer';
+    this.nodes.reviewActions?.classList.toggle('hidden', !this.isRevealed);
+
+    this.renderExamples(card.examples);
+    this.renderExtra(card, state);
+    this.nodes.card.classList.remove('card-change');
+    requestAnimationFrame(() => this.nodes.card.classList.add('card-change'));
+  }
+
+  renderExamples(examples) {
+    this.nodes.examples.innerHTML = '';
+
+    if (!examples.length) {
+      const empty = document.createElement('p');
+      empty.className = 'example-card';
+      empty.textContent = 'Add one or two real examples to this card later.';
+      this.nodes.examples.appendChild(empty);
+      return;
+    }
+
+    examples.forEach((example) => {
+      const item = document.createElement('div');
+      item.className = 'example-card';
+
+      const text = document.createElement('p');
+      text.textContent = example;
+
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'mini-voice';
+      button.textContent = 'Listen';
+      button.addEventListener('click', () => this.speak(example));
+
+      item.append(text, button);
+      this.nodes.examples.appendChild(item);
+    });
+  }
+
+  renderExtra(card, state) {
+    const nextDate = state.nextReview > Date.now()
+      ? new Date(state.nextReview).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })
+      : 'today';
+
+    this.nodes.extra.innerHTML = `
+      <span>${card.category}</span>
+      <span>Reviewed ${state.repetitions}x</span>
+      <span>Next: ${nextDate}</span>
+      ${card.notes ? `<span>${card.notes}</span>` : ''}
+    `;
+  }
+
+  updateStats() {
+    const now = Date.now();
+    const states = this.cards.map((card) => this.getCardState(card.id));
+    const mastered = states.filter((state) => state.repetitions >= 4 && state.lastRating === 'easy').length;
+    const review = states.filter((state) => state.nextReview <= now && state.repetitions > 0).length;
+
+    this.nodes.totalCards.textContent = this.cards.length;
+    this.nodes.masteredCards.textContent = mastered;
+    this.nodes.reviewCards.textContent = review;
+  }
+
+  toggleAnswer() {
+    if (!this.filteredCards.length) return;
+    this.isRevealed = !this.isRevealed;
+    this.render();
+  }
+
+  goToCard(nextIndex) {
+    if (!this.filteredCards.length) return;
+
+    if (nextIndex < 0) this.index = this.filteredCards.length - 1;
+    else if (nextIndex >= this.filteredCards.length) this.index = 0;
+    else this.index = nextIndex;
+
+    this.isRevealed = false;
+    this.render();
+  }
+
+  rateCard(rating) {
+    const card = this.currentCard;
+    if (!card) return;
+
+    const state = this.getCardState(card.id);
+    const intervals = {
+      again: 5 * 60 * 1000,
+      hard: 24 * 60 * 60 * 1000,
+      good: Math.max(2, state.repetitions + 1) * 24 * 60 * 60 * 1000,
+      easy: Math.max(4, (state.repetitions + 1) * 3) * 24 * 60 * 60 * 1000
+    };
+
+    this.progress[card.id] = {
+      repetitions: state.repetitions + 1,
+      lastRating: rating,
+      nextReview: Date.now() + intervals[rating]
+    };
+
+    this.saveProgress();
+    this.goToCard(this.index + 1);
+  }
+
+  speak(text) {
+    if (!text || !('speechSynthesis' in window)) return;
+
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.9;
+    window.speechSynthesis.speak(utterance);
+  }
+
+  openPanel() {
+    this.nodes.panel?.classList.add('open');
+    this.nodes.panel?.setAttribute('aria-hidden', 'false');
+  }
+
+  closePanel() {
+    this.nodes.panel?.classList.remove('open');
+    this.nodes.panel?.setAttribute('aria-hidden', 'true');
+  }
+
+  updateActiveSetButton() {
+    this.nodes.setButtons.forEach((button) => {
+      button.classList.toggle('active', button.dataset.set === this.activeSet);
+    });
+  }
+
+  get currentCard() {
+    return this.filteredCards[this.index];
+  }
+
+  getCardState(cardId) {
+    return this.progress[cardId] || {
+      repetitions: 0,
+      lastRating: 'new',
+      nextReview: 0
+    };
+  }
+
+  readProgress() {
+    try {
+      return JSON.parse(localStorage.getItem(this.storageKey)) || {};
+    } catch (_) {
+      return {};
     }
   }
 
-  renderCard() {
-    if (!this.data || !this.data.length || !this.mainCard) return;
-
-    this.mainCard.classList.add('rendered');
-    const lastIndex = this.data.length - 1;
-
-    if (this.index > lastIndex) this.index = 0;
-    if (this.index < 0) this.index = lastIndex;
-
-    const current = this.data[this.index];
-
-    if (this.english) {
-      this.english.dataset.cardEn = current.english;
-      this.english.textContent = current.english;
-    }
-    if (this.example) {
-      this.example.textContent = current.example || '';
-    }
-    if (this.translate) {
-      this.translate.textContent = current.translate;
-    }
-    if (this.counter) {
-      this.counter.textContent = this.index + 1;
-    }
-
-    setTimeout(() => this.mainCard.classList.remove('rendered'), 200);
+  saveProgress() {
+    localStorage.setItem(this.storageKey, JSON.stringify(this.progress));
   }
 
-  generateVoiceOutput() {
-    if (!this.english) return;
-    const synth = window.speechSynthesis;
-    const utterThis = new SpeechSynthesisUtterance(this.english.dataset.cardEn);
-    utterThis.lang = 'en-US';
-    utterThis.rate = 1;
-    synth.speak(utterThis);
-    if (this.voiceButton) {
-      this.voiceButton.disabled = true;
-      utterThis.addEventListener('end', () => {
-        this.voiceButton.disabled = false;
-      });
-    }
+  slugify(value) {
+    return String(value)
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/(^-|-$)/g, '');
   }
 }
 
-const app = new Cards();
+const app = new EnglishCardsApp();
 app.init();
