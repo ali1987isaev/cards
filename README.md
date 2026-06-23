@@ -14,17 +14,22 @@ Simple static vocabulary app. No build step and no backend are required.
 
 ```json
 {
-  "id": "deploy",
-  "term": "deploy",
-  "translation": "развернуть / выпустить",
-  "definition": "To put code or an app into production.",
+  "id": "research",
+  "term": "research",
+  "translation": "исследование",
+  "definition": "The careful study of a subject to discover new information.",
   "examples": [
-    "We deployed the fix to production yesterday.",
-    "I can't deploy because the tests are failing."
+    "We did a small research project in class.",
+    "The company is conducting market research.",
+    "She spent years doing research on climate change.",
+    "More research is needed in this area.",
+    "The findings are based on recent research."
   ],
-  "notes": "Common: deploy to production",
+  "notes": "Usually uncountable. We say 'do research' rather than 'make research'.",
+  "synonyms": ["study", "investigation", "analysis"],
+  "antonyms": [],
   "level": "B2",
-  "category": "Work"
+  "category": "General"
 }
 ```
 
