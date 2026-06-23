@@ -268,5 +268,95 @@
     "antonyms": ["ignore", "disregard"],
     "level": "B1",
     "category": "General"
+  },
+  {
+    "id": "righteous",
+    "term": "righteous",
+    "translation": "праведный, справедливый, благочестивый",
+    "definition": "Morally good and fair, especially according to religious or ethical principles.",
+    "examples": [
+      "He tried to live a righteous life.",
+      "A righteous person treats others with honesty and mercy.",
+      "She made a righteous decision even though it was difficult.",
+      "Many people respected him for his righteous character.",
+      "Righteous actions should come from sincere intentions."
+    ],
+    "notes": "Often used in religious or moral contexts. It can describe a person, action, or way of life.",
+    "synonyms": ["upright", "virtuous", "honorable"],
+    "antonyms": ["wicked", "unjust", "corrupt"],
+    "level": "C1",
+    "category": "Character"
+  },
+  {
+    "id": "human-being",
+    "term": "human being",
+    "translation": "человек, человеческое существо",
+    "definition": "A person; a member of the human race.",
+    "examples": [
+      "Every human being deserves respect.",
+      "A human being needs food, water, and care.",
+      "She believes every human being has value.",
+      "We should treat each human being with kindness.",
+      "No human being is perfect."
+    ],
+    "notes": "More formal or emphatic than 'person'.",
+    "synonyms": ["person", "individual", "human"],
+    "antonyms": [],
+    "level": "B1",
+    "category": "General"
+  },
+  {
+    "id": "universe",
+    "term": "universe",
+    "translation": "вселенная",
+    "definition": "All space, time, matter, and energy, including all stars, planets, and galaxies.",
+    "examples": [
+      "The universe is incredibly vast.",
+      "Scientists study how the universe began.",
+      "There are billions of galaxies in the universe.",
+      "Some people look at the universe and think about its Creator.",
+      "We still know very little about the universe."
+    ],
+    "notes": "Usually used with 'the': the universe.",
+    "synonyms": ["cosmos", "creation", "space"],
+    "antonyms": [],
+    "level": "B2",
+    "category": "General"
+  },
+  {
+    "id": "be-proud",
+    "term": "be proud",
+    "translation": "гордиться, быть гордым",
+    "definition": "To feel pleased and satisfied because of something you or someone else has done or because of who someone is.",
+    "examples": [
+      "I am proud of your progress.",
+      "She is proud of her children.",
+      "You should be proud of your hard work.",
+      "He was proud to help his family.",
+      "They are proud of their culture."
+    ],
+    "notes": "Often used with 'of': be proud of someone or something. It can be positive, but 'too proud' can mean arrogant.",
+    "synonyms": ["feel pleased", "take pride in", "feel satisfied"],
+    "antonyms": ["be ashamed", "feel embarrassed"],
+    "level": "B1",
+    "category": "Emotions"
+  },
+  {
+    "id": "faith",
+    "term": "faith",
+    "translation": "вера, доверие",
+    "definition": "Strong belief or trust in God, a religion, a person, or an idea.",
+    "examples": [
+      "Faith gives many people strength.",
+      "She has strong faith in Allah.",
+      "He never lost faith during difficult times.",
+      "Their faith taught them to be patient and kind.",
+      "I have faith that things will improve."
+    ],
+    "notes": "Can mean religious belief or trust in someone or something.",
+    "synonyms": ["belief", "trust", "confidence"],
+    "antonyms": ["doubt", "disbelief"],
+    "level": "B2",
+    "category": "Religion"
   }
 ]
