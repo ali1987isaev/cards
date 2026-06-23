@@ -3,120 +3,180 @@
     "id": "education",
     "term": "education",
     "translation": "образование",
-    "definition": "",
+    "definition": "The process of learning and gaining knowledge and skills.",
     "examples": [
-      "Education helps people find better jobs."
+      "Education helps people find better jobs.",
+      "Every child deserves a good education.",
+      "She received her education in Ireland.",
+      "Education can change people's lives.",
+      "He works in the field of education."
     ],
-    "notes": "",
-    "level": "",
+    "notes": "Usually uncountable. We say 'an education' when talking about a particular type of education.",
+    "synonyms": ["schooling", "learning", "instruction"],
+    "antonyms": [],
+    "level": "B1",
     "category": "General"
   },
   {
     "id": "journey",
     "term": "journey",
     "translation": "путешествие",
-    "definition": "",
+    "definition": "The act of traveling from one place to another or a process of personal development.",
     "examples": [
-      "Our English journey starts today."
+      "Our English journey starts today.",
+      "The journey took nearly six hours.",
+      "They went on a long journey across Europe.",
+      "Learning a language is a lifelong journey.",
+      "She shared her journey of becoming a doctor."
     ],
-    "notes": "",
-    "level": "",
+    "notes": "Can be used literally (travel) or figuratively (life experience, learning process).",
+    "synonyms": ["trip", "voyage", "expedition"],
+    "antonyms": ["stay"],
+    "level": "B1",
     "category": "General"
   },
   {
     "id": "to-process",
     "term": "to process",
     "translation": "обрабатывать",
-    "definition": "",
+    "definition": "To deal with information, requests, or materials in an organized way.",
     "examples": [
-      "We will process all the applications within two days."
+      "We will process all the applications within two days.",
+      "The system processes thousands of orders every day.",
+      "It takes time to process new information.",
+      "Your payment is being processed.",
+      "The computer can process data very quickly."
     ],
-    "notes": "",
-    "level": "",
+    "notes": "Common in business and technology contexts.",
+    "synonyms": ["handle", "deal with", "manage"],
+    "antonyms": ["ignore", "neglect"],
+    "level": "B2",
     "category": "General"
   },
   {
     "id": "dedicate",
     "term": "dedicate",
     "translation": "посвятить, посвящать",
-    "definition": "",
+    "definition": "To give your time, effort, or attention completely to something.",
     "examples": [
-      "I dedicate my first novel to my father."
+      "I dedicate my first novel to my father.",
+      "She dedicated her life to helping others.",
+      "He dedicated many years to scientific research.",
+      "You need to dedicate time to learning English.",
+      "The book is dedicated to all teachers."
     ],
-    "notes": "",
-    "level": "",
+    "notes": "Often used with 'to': dedicate something to someone; dedicate yourself to something.",
+    "synonyms": ["devote", "commit", "give"],
+    "antonyms": ["neglect", "abandon"],
+    "level": "B2",
     "category": "General"
   },
   {
     "id": "justice",
     "term": "justice",
     "translation": "справедливость, правосудие, юстиция",
-    "definition": "",
+    "definition": "Fair treatment of people according to what is right or lawful.",
     "examples": [
-      "He dedicated his life to fighting for justice."
+      "He dedicated his life to fighting for justice.",
+      "The victims demanded justice.",
+      "Everyone should be treated with justice and respect.",
+      "The court seeks justice for all citizens.",
+      "She has a strong sense of justice."
     ],
-    "notes": "",
-    "level": "",
+    "notes": "Usually uncountable.",
+    "synonyms": ["fairness", "equity", "impartiality"],
+    "antonyms": ["injustice", "unfairness"],
+    "level": "B2",
     "category": "General"
   },
   {
     "id": "mercy",
     "term": "mercy",
     "translation": "милость, милосердие, сострадание",
-    "definition": "",
+    "definition": "Kindness and forgiveness shown toward someone whom you could punish.",
     "examples": [
-      "Volunteer work requires mercy and compassion."
+      "Volunteer work requires mercy and compassion.",
+      "The prisoner asked for mercy.",
+      "They showed mercy to the defeated enemy.",
+      "May Allah have mercy on him.",
+      "The judge decided to show mercy."
     ],
-    "notes": "",
-    "level": "",
+    "notes": "Common in religious and legal contexts.",
+    "synonyms": ["kindness", "forgiveness", "clemency"],
+    "antonyms": ["cruelty", "harshness"],
+    "level": "B2",
     "category": "General"
   },
   {
     "id": "compassion",
     "term": "compassion",
     "translation": "сострадание, сочувствие",
-    "definition": "",
+    "definition": "A feeling of sympathy and a desire to help people who are suffering.",
     "examples": [
-      "Volunteer work requires mercy and compassion."
+      "Volunteer work requires mercy and compassion.",
+      "She treated her patients with compassion.",
+      "Compassion is one of his greatest qualities.",
+      "Children need love and compassion.",
+      "He showed compassion toward the homeless."
     ],
-    "notes": "",
-    "level": "",
+    "notes": "Usually uncountable.",
+    "synonyms": ["sympathy", "empathy", "kindness"],
+    "antonyms": ["cruelty", "indifference"],
+    "level": "B2",
     "category": "General"
   },
   {
     "id": "wholesome",
     "term": "wholesome",
-    "translation": "полноценный, здоровый",
-    "definition": "",
+    "translation": "полезный, здоровый, полноценный",
+    "definition": "Good for your health or morally good and positive.",
     "examples": [
-      "My mother always buys fresh and wholesome food."
+      "My mother always buys fresh and wholesome food.",
+      "The children enjoyed a wholesome family environment.",
+      "They try to eat wholesome meals.",
+      "It is a wholesome activity for young people.",
+      "She prefers wholesome ingredients."
     ],
-    "notes": "",
-    "level": "",
+    "notes": "Often used with food, lifestyle, and family activities.",
+    "synonyms": ["healthy", "nutritious", "beneficial"],
+    "antonyms": ["unhealthy", "harmful"],
+    "level": "B2",
     "category": "General"
   },
   {
     "id": "admit",
     "term": "admit",
-    "translation": "допускать что-л",
-    "definition": "",
+    "translation": "признавать, допускать",
+    "definition": "To say that something is true, especially when it is difficult or embarrassing to say.",
     "examples": [
-      "I admit that I was wrong."
+      "I admit that I was wrong.",
+      "He admitted making a mistake.",
+      "She didn't want to admit that she needed help.",
+      "I have to admit that the movie was excellent.",
+      "They finally admitted the truth."
     ],
-    "notes": "",
-    "level": "",
+    "notes": "Often followed by 'that' or by a gerund (-ing form).",
+    "synonyms": ["acknowledge", "accept", "confess"],
+    "antonyms": ["deny", "reject"],
+    "level": "B1",
     "category": "General"
   },
   {
     "id": "research",
     "term": "research",
     "translation": "исследование",
-    "definition": "",
+    "definition": "The careful study of a subject to discover new information.",
     "examples": [
-      "We did a small research project in class."
+      "We did a small research project in class.",
+      "The company is conducting market research.",
+      "She spent years doing research on climate change.",
+      "More research is needed in this area.",
+      "The findings are based on recent research."
     ],
-    "notes": "",
-    "level": "",
+    "notes": "Usually uncountable. We say 'do research' rather than 'make research'.",
+    "synonyms": ["study", "investigation", "analysis"],
+    "antonyms": [],
+    "level": "B2",
     "category": "General"
   },
   {
@@ -127,9 +187,13 @@
     "examples": [
       "Piety is shown not only in worship but also in good character.",
       "His piety inspired many people around him.",
-      "She tried to live a life of piety and kindness."
+      "She tried to live a life of piety and kindness.",
+      "Many people admire her piety and humility.",
+      "Piety should be reflected in both words and actions."
     ],
     "notes": "Often used in religious contexts to describe devotion and righteous behavior.",
+    "synonyms": ["devotion", "godliness", "righteousness"],
+    "antonyms": ["impiety", "wickedness"],
     "level": "C1",
     "category": "Religion"
   },
@@ -141,9 +205,13 @@
     "examples": [
       "This book belongs to my brother.",
       "These keys belong to me.",
-      "She belongs to a local sports club."
+      "She belongs to a local sports club.",
+      "That phone doesn't belong to me.",
+      "We all want to belong to a community."
     ],
     "notes": "Always followed by 'to'.",
+    "synonyms": ["be owned by", "be part of", "be associated with"],
+    "antonyms": [],
     "level": "B1",
     "category": "General"
   },
@@ -155,9 +223,13 @@
     "examples": [
       "He is an honorable man who always keeps his promises.",
       "Helping others is an honorable thing to do.",
-      "She made an honorable decision."
+      "She made an honorable decision.",
+      "Everyone respected his honorable behavior.",
+      "It is honorable to admit your mistakes."
     ],
     "notes": "British spelling: honourable.",
+    "synonyms": ["respectable", "noble", "upright"],
+    "antonyms": ["dishonorable", "shameful"],
     "level": "B2",
     "category": "Character"
   },
@@ -169,9 +241,13 @@
     "examples": [
       "Wealth alone does not guarantee happiness.",
       "He accumulated great wealth through his business.",
-      "Good health is a form of wealth."
+      "Good health is a form of wealth.",
+      "She inherited a considerable amount of wealth.",
+      "Some people spend their lives chasing wealth."
     ],
     "notes": "Usually an uncountable noun.",
+    "synonyms": ["riches", "fortune", "prosperity"],
+    "antonyms": ["poverty"],
     "level": "B2",
     "category": "General"
   },
@@ -183,9 +259,13 @@
     "examples": [
       "Please consider all the options before making a decision.",
       "I am considering changing my job.",
-      "Many people consider him an excellent teacher."
+      "Many people consider him an excellent teacher.",
+      "Have you considered moving to another city?",
+      "We should consider the long-term effects of this decision."
     ],
     "notes": "Can mean both 'think about' and 'regard as'.",
+    "synonyms": ["think about", "regard", "evaluate"],
+    "antonyms": ["ignore", "disregard"],
     "level": "B1",
     "category": "General"
   }
