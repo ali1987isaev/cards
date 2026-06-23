@@ -302,6 +302,55 @@ h1 {
   margin: 0;
 }
 
+.word-list,
+.notes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.word-list h3,
+.notes h3 {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.word-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.word-chip {
+  max-width: 100%;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid rgba(103, 232, 249, 0.32);
+  border-radius: 999px;
+  background: rgba(103, 232, 249, 0.12);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.notes {
+  padding: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.notes p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .mini-voice {
   flex: 0 0 auto;
   min-width: auto;

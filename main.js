@@ -34,6 +34,9 @@ class EnglishCardsApp {
       translation: document.querySelector('[data-translation]'),
       definition: document.querySelector('[data-definition]'),
       examples: document.querySelector('[data-examples]'),
+      synonyms: document.querySelector('[data-synonyms]'),
+      antonyms: document.querySelector('[data-antonyms]'),
+      notes: document.querySelector('[data-notes]'),
       extra: document.querySelector('[data-extra]'),
       speakTerm: document.querySelector('[data-speak-term]'),
       speakExample: document.querySelector('[data-speak-example]'),
@@ -110,6 +113,8 @@ class EnglishCardsApp {
       const examples = Array.isArray(card.examples)
         ? card.examples.filter(Boolean)
         : [card.example].filter(Boolean);
+      const synonyms = Array.isArray(card.synonyms) ? card.synonyms.filter(Boolean) : [];
+      const antonyms = Array.isArray(card.antonyms) ? card.antonyms.filter(Boolean) : [];
 
       return {
         id,
@@ -118,6 +123,8 @@ class EnglishCardsApp {
         translation: card.translation || card.translate || '',
         definition: card.definition || '',
         examples,
+        synonyms,
+        antonyms,
         frontExample: card.frontExample || examples[0] || '',
         notes: card.notes || '',
         level: card.level || '',
@@ -185,6 +192,9 @@ class EnglishCardsApp {
     this.nodes.reviewActions?.classList.toggle('hidden', !this.isRevealed);
 
     this.renderExamples(card.examples);
+    this.renderWordList(this.nodes.synonyms, 'Synonyms', card.synonyms);
+    this.renderWordList(this.nodes.antonyms, 'Antonyms', card.antonyms);
+    this.renderNotes(card.notes);
     this.renderExtra(card, state);
     this.nodes.card.classList.remove('card-change');
     requestAnimationFrame(() => this.nodes.card.classList.add('card-change'));
@@ -219,17 +229,55 @@ class EnglishCardsApp {
     });
   }
 
+  renderWordList(node, title, words) {
+    node.innerHTML = '';
+    node.hidden = !words.length;
+    if (!words.length) return;
+
+    const heading = document.createElement('h3');
+    heading.textContent = title;
+
+    const chips = document.createElement('div');
+    chips.className = 'word-chips';
+
+    words.forEach((word) => {
+      const chip = document.createElement('span');
+      chip.className = 'word-chip notranslate';
+      chip.textContent = word;
+      chips.appendChild(chip);
+    });
+
+    node.append(heading, chips);
+  }
+
+  renderNotes(notes) {
+    this.nodes.notes.innerHTML = '';
+    this.nodes.notes.hidden = !notes;
+    if (!notes) return;
+
+    const heading = document.createElement('h3');
+    heading.textContent = 'Notes';
+
+    const text = document.createElement('p');
+    text.textContent = notes;
+
+    this.nodes.notes.append(heading, text);
+  }
+
   renderExtra(card, state) {
     const nextDate = state.nextReview > Date.now()
       ? new Date(state.nextReview).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })
       : 'today';
 
-    this.nodes.extra.innerHTML = `
-      <span>${card.category}</span>
-      <span>Reviewed ${state.repetitions}x</span>
-      <span>Next: ${nextDate}</span>
-      ${card.notes ? `<span>${card.notes}</span>` : ''}
-    `;
+    this.nodes.extra.innerHTML = '';
+
+    [card.level, card.category, `Reviewed ${state.repetitions}x`, `Next: ${nextDate}`]
+      .filter(Boolean)
+      .forEach((item) => {
+        const tag = document.createElement('span');
+        tag.textContent = item;
+        this.nodes.extra.appendChild(tag);
+      });
   }
 
   updateStats() {
