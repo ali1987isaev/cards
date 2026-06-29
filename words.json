@@ -252,24 +252,6 @@
     "category": "General"
   },
   {
-    "id": "consider",
-    "term": "consider",
-    "translation": "считать, рассматривать, обдумывать",
-    "definition": "To think carefully about something or to regard something in a particular way.",
-    "examples": [
-      "Please consider all the options before making a decision.",
-      "I am considering changing my job.",
-      "Many people consider him an excellent teacher.",
-      "Have you considered moving to another city?",
-      "We should consider the long-term effects of this decision."
-    ],
-    "notes": "Can mean both 'think about' and 'regard as'.",
-    "synonyms": ["think about", "regard", "evaluate"],
-    "antonyms": ["ignore", "disregard"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
     "id": "righteous",
     "term": "righteous",
     "translation": "праведный, справедливый, благочестивый",
