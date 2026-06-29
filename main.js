@@ -28,7 +28,6 @@ class EnglishCardsApp {
       cardType: document.querySelector('[data-card-type]'),
       counter: document.querySelector('[data-counter]'),
       term: document.querySelector('[data-term]'),
-      hint: document.querySelector('[data-hint]'),
       frontExample: document.querySelector('[data-front-example]'),
       answer: document.querySelector('[data-answer]'),
       translation: document.querySelector('[data-translation]'),
@@ -183,9 +182,6 @@ class EnglishCardsApp {
     this.nodes.term.textContent = card.term;
     this.nodes.translation.textContent = card.translation;
     this.nodes.definition.textContent = card.definition || 'Try to understand it from the example sentence.';
-    this.nodes.hint.textContent = this.isRevealed
-      ? 'Check the meaning, read examples aloud, then rate the card.'
-      : 'Remember the meaning first. Tap the card only when you are ready.';
     this.nodes.frontExample.textContent = card.frontExample || 'No context sentence yet. Add one example to this card later.';
     this.nodes.answer.hidden = !this.isRevealed;
     this.nodes.flip.textContent = this.isRevealed ? 'Hide answer' : 'Show answer';

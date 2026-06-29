@@ -20,5 +20,311 @@
     "antonyms": ["for fame", "for money", "for personal gain"],
     "level": "B2",
     "category": "Religion"
+  },
+  {
+    "id": "fair-enough",
+    "term": "fair enough",
+    "translation": "логично; окей, справедливо",
+    "definition": "Used to show that you accept or understand someone's opinion, explanation, or decision, even if you do not completely agree.",
+    "examples": [
+      "Fair enough. Let's try your approach.",
+      "You don't want to go? Fair enough.",
+      "Fair enough, I can see your point.",
+      "Fair enough, we'll leave it until tomorrow.",
+      "That's fair enough. Thanks for explaining."
+    ],
+    "notes": "A very common conversational expression used to acknowledge someone's point politely.",
+    "synonyms": ["I understand", "that's reasonable", "I see your point"],
+    "antonyms": ["I disagree", "not really", "I don't think so"],
+    "level": "B2",
+    "category": "Conversation"
+  },
+  {
+    "id": "im-not-convinced",
+    "term": "I'm not convinced",
+    "translation": "я не убеждён",
+    "definition": "Used to politely express that you do not believe or fully accept an idea or explanation.",
+    "examples": [
+      "I'm not convinced that's the best solution.",
+      "I'm not convinced by the evidence.",
+      "I'm not convinced it'll work.",
+      "She explained it, but I'm still not convinced.",
+      "I'm not convinced we should change the plan."
+    ],
+    "notes": "A polite way to express doubt without sounding rude.",
+    "synonyms": ["I have doubts", "I'm skeptical", "I'm not sure"],
+    "antonyms": ["I'm convinced", "I agree", "I'm sure"],
+    "level": "B2",
+    "category": "Conversation"
+  },
+  {
+    "id": "long-story-short",
+    "term": "long story short",
+    "translation": "короче говоря",
+    "definition": "Used before giving only the main point of a longer story or explanation.",
+    "examples": [
+      "Long story short, we missed the train.",
+      "Long story short, everything worked out.",
+      "Long story short, I got the job.",
+      "Long story short, we decided to move.",
+      "Long story short, it wasn't my fault."
+    ],
+    "notes": "Usually placed at the beginning of a sentence.",
+    "synonyms": ["in short", "to make a long story short", "briefly"],
+    "antonyms": ["to explain in detail"],
+    "level": "B2",
+    "category": "Conversation"
+  },
+  {
+    "id": "ill-handle-it",
+    "term": "I'll handle it",
+    "translation": "я разберусь; я возьму это на себя",
+    "definition": "Used to say that you will take responsibility for dealing with a situation or task.",
+    "examples": [
+      "Don't worry, I'll handle it.",
+      "I'll handle the meeting tomorrow.",
+      "You can relax. I'll handle everything.",
+      "Let me handle this problem.",
+      "I'll handle the customer complaint."
+    ],
+    "notes": "Often used to reassure someone.",
+    "synonyms": ["I'll take care of it", "leave it to me", "I've got it"],
+    "antonyms": ["I can't do it", "you handle it"],
+    "level": "B2",
+    "category": "Work"
+  },
+  {
+    "id": "ill-get-back-to-you",
+    "term": "I'll get back to you",
+    "translation": "я вернусь к вам с ответом",
+    "definition": "Used to say that you will reply or provide more information later.",
+    "examples": [
+      "I'll get back to you tomorrow.",
+      "Let me check, and I'll get back to you.",
+      "I'll get back to you after the meeting.",
+      "Thanks for your question. I'll get back to you soon.",
+      "I'll get back to you once I have an answer."
+    ],
+    "notes": "Very common in business communication.",
+    "synonyms": ["I'll let you know", "I'll reply later", "I'll follow up"],
+    "antonyms": ["I don't know", "I can't answer"],
+    "level": "B2",
+    "category": "Work"
+  },
+  {
+    "id": "im-not-sure-i-follow",
+    "term": "I'm not sure I follow",
+    "translation": "я не совсем уловил мысль",
+    "definition": "A polite way to say that you do not understand what someone means.",
+    "examples": [
+      "I'm not sure I follow. Could you explain?",
+      "Sorry, I'm not sure I follow your point.",
+      "I'm not sure I follow what you mean.",
+      "Could you repeat that? I'm not sure I follow.",
+      "I'm not sure I follow the logic."
+    ],
+    "notes": "More polite than simply saying 'I don't understand.'",
+    "synonyms": ["I don't quite understand", "I'm confused", "Could you explain?"],
+    "antonyms": ["I understand", "I follow"],
+    "level": "B2",
+    "category": "Conversation"
+  },
+  {
+    "id": "can-you-walk-me-through-it",
+    "term": "Can you walk me through it?",
+    "translation": "можете объяснить по шагам?",
+    "definition": "A polite request asking someone to explain a process step by step.",
+    "examples": [
+      "Can you walk me through the setup?",
+      "Can you walk me through the process?",
+      "Could you walk me through your solution?",
+      "Please walk me through the report.",
+      "Can you walk me through what happened?"
+    ],
+    "notes": "Very common in IT, business, and training.",
+    "synonyms": ["Explain it step by step", "Show me how", "Guide me through it"],
+    "antonyms": ["Figure it out yourself"],
+    "level": "B2",
+    "category": "Work"
+  },
+  {
+    "id": "no-worries",
+    "term": "No worries",
+    "translation": "без проблем",
+    "definition": "A friendly way to say that something is not a problem or that there is no need to apologize.",
+    "examples": [
+      "No worries. It happens.",
+      "No worries, I can help.",
+      "Thanks! — No worries.",
+      "No worries about being late.",
+      "No worries, we've got plenty of time."
+    ],
+    "notes": "Especially common in Australia, the UK, and Ireland.",
+    "synonyms": ["No problem", "It's okay", "Don't worry"],
+    "antonyms": ["That's a problem"],
+    "level": "B1",
+    "category": "Conversation"
+  },
+  {
+    "id": "it-depends",
+    "term": "It depends",
+    "translation": "зависит",
+    "definition": "Used when the answer changes depending on the situation or conditions.",
+    "examples": [
+      "It depends on the weather.",
+      "It depends what you're looking for.",
+      "It depends on your budget.",
+      "Whether we go depends on the traffic.",
+      "It really depends."
+    ],
+    "notes": "One of the most useful everyday English expressions.",
+    "synonyms": ["That depends", "It varies"],
+    "antonyms": ["Always", "Never"],
+    "level": "B1",
+    "category": "Conversation"
+  },
+  {
+    "id": "thats-a-good-point",
+    "term": "That's a good point",
+    "translation": "хороший аргумент",
+    "definition": "Used to acknowledge that someone has made a valid or important observation.",
+    "examples": [
+      "That's a good point. I hadn't thought about that.",
+      "That's a good point, actually.",
+      "You make a good point.",
+      "That's a really good point.",
+      "Thanks, that's a good point."
+    ],
+    "notes": "A polite way to show appreciation for someone's idea.",
+    "synonyms": ["You're right", "Good observation", "That's true"],
+    "antonyms": ["That's not true", "I disagree"],
+    "level": "B2",
+    "category": "Conversation"
+  },
+  {
+    "id": "heres-what-i-suggest",
+    "term": "Here's what I suggest",
+    "translation": "вот что я предлагаю",
+    "definition": "Used before giving advice or making a recommendation.",
+    "examples": [
+      "Here's what I suggest: let's start over.",
+      "Here's what I suggest we do.",
+      "Here's what I suggest for the project.",
+      "Here's what I suggest if you want better results.",
+      "Here's what I suggest going forward."
+    ],
+    "notes": "Common in meetings and professional discussions.",
+    "synonyms": ["My suggestion is", "I'd recommend", "I suggest"],
+    "antonyms": ["I have no idea"],
+    "level": "B2",
+    "category": "Work"
+  },
+  {
+    "id": "that-works-for-me",
+    "term": "That works for me",
+    "translation": "мне подходит",
+    "definition": "Used to say that you agree with a suggestion, plan, or arrangement.",
+    "examples": [
+      "Monday works? — That works for me.",
+      "That works for me. Let's do it.",
+      "Ten o'clock? That works for me.",
+      "Your plan works for me.",
+      "That works perfectly for me."
+    ],
+    "notes": "A natural alternative to saying 'OK' or 'I agree.'",
+    "synonyms": ["Sounds good", "I'm okay with that", "That suits me"],
+    "antonyms": ["That doesn't work for me"],
+    "level": "B2",
+    "category": "Conversation"
+  },
+  {
+    "id": "dont-take-it-personally",
+    "term": "Don't take it personally",
+    "translation": "не принимай это на свой счёт",
+    "definition": "Used to tell someone that something was not intended as a personal criticism or attack.",
+    "examples": [
+      "Don't take it personally. It's just business.",
+      "Please don't take it personally.",
+      "He wasn't criticizing you, so don't take it personally.",
+      "Don't take it personally if they say no.",
+      "I hope you don't take it personally."
+    ],
+    "notes": "Often used after giving criticism or bad news.",
+    "synonyms": ["It's not about you", "Don't be offended"],
+    "antonyms": ["Take it personally"],
+    "level": "B2",
+    "category": "Conversation"
+  },
+  {
+    "id": "im-not-buying-it",
+    "term": "I'm not buying it",
+    "translation": "я тебе не верю",
+    "definition": "An informal expression meaning that you do not believe someone's explanation or excuse.",
+    "examples": [
+      "I'm not buying it. Tell me the truth.",
+      "Nice story, but I'm not buying it.",
+      "I'm not buying your excuse.",
+      "He said he forgot, but I'm not buying it.",
+      "Sorry, I'm not buying it."
+    ],
+    "notes": "Informal. It has nothing to do with actually buying something.",
+    "synonyms": ["I don't believe you", "I'm skeptical", "I don't buy that"],
+    "antonyms": ["I believe you", "I'm convinced"],
+    "level": "B2",
+    "category": "Conversation"
+  },
+  {
+    "id": "can-you-keep-an-eye-on-it",
+    "term": "Can you keep an eye on it?",
+    "translation": "можешь присмотреть за этим?",
+    "definition": "A request asking someone to watch or monitor something for a period of time.",
+    "examples": [
+      "Can you keep an eye on my bag?",
+      "Can you keep an eye on the kids?",
+      "Can you keep an eye on the server?",
+      "Please keep an eye on the delivery.",
+      "Can you keep an eye on things while I'm away?"
+    ],
+    "notes": "Means 'watch carefully,' not literally look only with your eyes.",
+    "synonyms": ["Watch it", "Look after it", "Monitor it"],
+    "antonyms": ["Ignore it", "Leave it alone"],
+    "level": "B2",
+    "category": "Conversation"
+  },
+  {
+    "id": "keep-me-posted",
+    "term": "Keep me posted",
+    "translation": "держи меня в курсе",
+    "definition": "A request asking someone to continue giving updates about a situation.",
+    "examples": [
+      "Keep me posted on your progress.",
+      "Please keep me posted.",
+      "Keep me posted if anything changes.",
+      "Keep me posted about the meeting.",
+      "Keep me posted while you're traveling."
+    ],
+    "notes": "Very common in business communication.",
+    "synonyms": ["Keep me updated", "Let me know", "Keep me informed"],
+    "antonyms": ["Don't tell me"],
+    "level": "B2",
+    "category": "Work"
+  },
+  {
+    "id": "im-all-for-it",
+    "term": "I'm all for it",
+    "translation": "я полностью за",
+    "definition": "An enthusiastic way to say that you completely support or agree with an idea.",
+    "examples": [
+      "I'm all for it if everyone agrees.",
+      "I'm all for trying something new.",
+      "You're suggesting a day off? I'm all for it.",
+      "I'm all for helping people.",
+      "I'm all for the new design."
+    ],
+    "notes": "Expresses strong support or enthusiasm.",
+    "synonyms": ["I completely agree", "I'm in favor", "I'm on board"],
+    "antonyms": ["I'm against it", "I oppose it"],
+    "level": "B2",
+    "category": "Conversation"
   }
 ]
