@@ -1,13 +1,13 @@
 class EnglishCardsApp {
   constructor() {
     this.sets = {
-      words: { label: 'Words', file: './words.json', type: 'word' },
+      vocabulary: { label: 'Vocabulary', file: './vocabulary.json', type: 'vocabulary' },
       verbs: { label: 'Verbs', file: './verbs.json', type: 'verb' },
       expressions: { label: 'Expressions', file: './expressions.json', type: 'expression' }
     };
 
     this.storageKey = 'english-cards-progress-v3';
-    this.activeSet = localStorage.getItem('english-cards-active-set') || 'words';
+    this.activeSet = this.normalizeSetKey(localStorage.getItem('english-cards-active-set') || 'vocabulary');
     this.mode = 'all';
     this.cards = [];
     this.filteredCards = [];
@@ -83,19 +83,20 @@ class EnglishCardsApp {
   }
 
   async loadSet(setKey) {
-    const set = this.sets[setKey] || this.sets.words;
+    const normalizedSetKey = this.normalizeSetKey(setKey);
+    const set = this.sets[normalizedSetKey] || this.sets.vocabulary;
 
     try {
       const response = await fetch(set.file, { cache: 'no-cache' });
       if (!response.ok) throw new Error(`Cannot load ${set.file}`);
 
       const cards = await response.json();
-      this.activeSet = setKey;
+      this.activeSet = this.sets[normalizedSetKey] ? normalizedSetKey : 'vocabulary';
       this.cards = this.normalizeCards(cards, set.type);
       this.index = 0;
       this.isRevealed = false;
 
-      localStorage.setItem('english-cards-active-set', setKey);
+      localStorage.setItem('english-cards-active-set', this.activeSet);
       this.updateActiveSetButton();
       this.applyFilter();
       this.closePanel();
@@ -232,10 +233,10 @@ class EnglishCardsApp {
     });
   }
 
-  renderWordList(node, title, words) {
+  renderWordList(node, title, terms) {
     node.innerHTML = '';
-    node.hidden = !words.length;
-    if (!words.length) return;
+    node.hidden = !terms.length;
+    if (!terms.length) return;
 
     const heading = document.createElement('h3');
     heading.textContent = title;
@@ -243,10 +244,10 @@ class EnglishCardsApp {
     const chips = document.createElement('div');
     chips.className = 'word-chips';
 
-    words.forEach((word) => {
+    terms.forEach((termText) => {
       const chip = document.createElement('span');
       chip.className = 'word-chip notranslate';
-      chip.textContent = word;
+      chip.textContent = termText;
       chips.appendChild(chip);
     });
 
@@ -393,6 +394,10 @@ class EnglishCardsApp {
     this.nodes.setButtons.forEach((button) => {
       button.classList.toggle('active', button.dataset.set === this.activeSet);
     });
+  }
+
+  normalizeSetKey(setKey) {
+    return setKey === 'words' ? 'vocabulary' : setKey;
   }
 
   get currentCard() {

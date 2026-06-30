@@ -377,5 +377,87 @@
     ],
     "level": "B2",
     "category": "Religion"
+  },
+  {
+    "id": "beforehand",
+    "term": "beforehand",
+    "translation": "заранее, предварительно",
+    "definition": "Before a particular time or event.",
+    "partOfSpeech": [
+      "adverb"
+    ],
+    "examples": [
+      "Please let me know beforehand if you cannot come.",
+      "We booked the tickets beforehand.",
+      "It is better to prepare everything beforehand.",
+      "She told me beforehand that she might be late.",
+      "You should check the requirements beforehand."
+    ],
+    "notes": "Similar to 'in advance'. Usually placed at the end of a sentence.",
+    "synonyms": [
+      "in advance",
+      "earlier",
+      "ahead of time"
+    ],
+    "antonyms": [
+      "afterwards",
+      "later"
+    ],
+    "level": "B2",
+    "category": "General"
+  },
+  {
+    "id": "throughout",
+    "term": "throughout",
+    "translation": "на протяжении, в течение всего, по всему",
+    "definition": "During the whole period of time or in every part of a place.",
+    "partOfSpeech": [
+      "preposition",
+      "adverb"
+    ],
+    "examples": [
+      "She stayed calm throughout the interview.",
+      "It rained throughout the night.",
+      "The company has offices throughout Europe.",
+      "He worked hard throughout the course.",
+      "There were small improvements throughout the year."
+    ],
+    "notes": "Can refer to time or place. It often means 'from the beginning to the end of something'.",
+    "synonyms": [
+      "during",
+      "all through",
+      "across"
+    ],
+    "antonyms": [],
+    "level": "B2",
+    "category": "General"
+  },
+  {
+    "id": "effort",
+    "term": "effort",
+    "translation": "усилие, старание",
+    "definition": "Physical or mental energy used to do something.",
+    "partOfSpeech": [
+      "noun"
+    ],
+    "examples": [
+      "Learning English takes time and effort.",
+      "She put a lot of effort into the project.",
+      "Your effort is more important than perfection.",
+      "He made an effort to arrive on time.",
+      "The team achieved success through hard effort."
+    ],
+    "notes": "Common phrases: make an effort, put effort into something, with effort.",
+    "synonyms": [
+      "work",
+      "attempt",
+      "energy"
+    ],
+    "antonyms": [
+      "laziness",
+      "inaction"
+    ],
+    "level": "B1",
+    "category": "General"
   }
 ]
