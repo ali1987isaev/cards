@@ -1328,5 +1328,464 @@
     ],
     "level": "B2",
     "category": "General"
+  },
+  {
+    "id": "bring",
+    "term": "bring",
+    "translation": "приносить, приводить",
+    "definition": "To take or carry someone or something to a place or person.",
+    "partOfSpeech": [
+      "verb"
+    ],
+    "displayTerm": "to bring",
+    "verb": {
+      "forms": {
+        "base": "bring",
+        "past": "brought",
+        "pastParticiple": "brought",
+        "ing": "bringing",
+        "thirdPerson": "brings"
+      }
+    },
+    "examples": [
+      "Please bring your passport to the appointment.",
+      "She brought some food for everyone.",
+      "This decision could bring many benefits.",
+      "He always brings his laptop to class.",
+      "The news brought hope to the family."
+    ],
+    "notes": "Irregular verb: bring \u2192 brought \u2192 brought. Can be used literally or figuratively.",
+    "synonyms": [
+      "carry",
+      "take",
+      "deliver"
+    ],
+    "antonyms": [
+      "take away",
+      "remove"
+    ],
+    "level": "B1",
+    "category": "General"
+  },
+  {
+    "id": "treat",
+    "term": "treat",
+    "translation": "относиться, обращаться, лечить",
+    "definition": "To behave toward someone in a particular way or to give medical care to someone.",
+    "partOfSpeech": [
+      "verb"
+    ],
+    "displayTerm": "to treat",
+    "verb": {
+      "forms": {
+        "base": "treat",
+        "past": "treated",
+        "pastParticiple": "treated",
+        "ing": "treating",
+        "thirdPerson": "treats"
+      }
+    },
+    "examples": [
+      "We should treat everyone with respect.",
+      "The doctor treated the patient quickly.",
+      "She treats her friends with kindness.",
+      "This medicine can treat the infection.",
+      "He was treated unfairly at work."
+    ],
+    "notes": "Common patterns: treat someone well, treat someone with respect, treat an illness.",
+    "synonyms": [
+      "behave toward",
+      "handle",
+      "care for"
+    ],
+    "antonyms": [
+      "mistreat",
+      "neglect"
+    ],
+    "level": "B1",
+    "category": "General"
+  },
+  {
+    "id": "survive",
+    "term": "survive",
+    "translation": "выживать, пережить",
+    "definition": "To continue to live or exist, especially after danger, difficulty, or hardship.",
+    "partOfSpeech": [
+      "verb"
+    ],
+    "displayTerm": "to survive",
+    "verb": {
+      "forms": {
+        "base": "survive",
+        "past": "survived",
+        "pastParticiple": "survived",
+        "ing": "surviving",
+        "thirdPerson": "survives"
+      }
+    },
+    "examples": [
+      "Many small businesses struggle to survive.",
+      "He survived a serious accident.",
+      "Plants cannot survive without water.",
+      "She survived a very difficult period in her life.",
+      "The company survived the crisis."
+    ],
+    "notes": "Can be used for people, animals, companies, ideas, and difficult situations.",
+    "synonyms": [
+      "live through",
+      "endure",
+      "remain alive"
+    ],
+    "antonyms": [
+      "die",
+      "fail",
+      "disappear"
+    ],
+    "level": "B1",
+    "category": "General"
+  },
+  {
+    "id": "succeed",
+    "term": "succeed",
+    "translation": "преуспевать, добиваться успеха",
+    "definition": "To achieve what you wanted or to do well.",
+    "partOfSpeech": [
+      "verb"
+    ],
+    "displayTerm": "to succeed",
+    "verb": {
+      "forms": {
+        "base": "succeed",
+        "past": "succeeded",
+        "pastParticiple": "succeeded",
+        "ing": "succeeding",
+        "thirdPerson": "succeeds"
+      }
+    },
+    "examples": [
+      "You need patience and effort to succeed.",
+      "She succeeded in passing the exam.",
+      "The project succeeded because the team worked together.",
+      "He wants to succeed in his new career.",
+      "Not every idea succeeds immediately."
+    ],
+    "notes": "Common pattern: succeed in doing something.",
+    "synonyms": [
+      "achieve",
+      "do well",
+      "prosper"
+    ],
+    "antonyms": [
+      "fail",
+      "lose"
+    ],
+    "level": "B1",
+    "category": "General"
+  },
+  {
+    "id": "reveal",
+    "term": "reveal",
+    "translation": "раскрывать, выявлять",
+    "definition": "To make something known or visible that was hidden or secret.",
+    "partOfSpeech": [
+      "verb"
+    ],
+    "displayTerm": "to reveal",
+    "verb": {
+      "forms": {
+        "base": "reveal",
+        "past": "revealed",
+        "pastParticiple": "revealed",
+        "ing": "revealing",
+        "thirdPerson": "reveals"
+      }
+    },
+    "examples": [
+      "The report revealed several problems.",
+      "She refused to reveal her plans.",
+      "The test results revealed the cause of the issue.",
+      "He revealed the truth during the meeting.",
+      "The data reveals an important pattern."
+    ],
+    "notes": "Often used with information, truth, results, secrets, or hidden details.",
+    "synonyms": [
+      "show",
+      "disclose",
+      "uncover"
+    ],
+    "antonyms": [
+      "hide",
+      "conceal"
+    ],
+    "level": "B2",
+    "category": "General"
+  },
+  {
+    "id": "respond",
+    "term": "respond",
+    "translation": "отвечать, реагировать",
+    "definition": "To answer someone or react to something that has happened.",
+    "partOfSpeech": [
+      "verb"
+    ],
+    "displayTerm": "to respond",
+    "verb": {
+      "forms": {
+        "base": "respond",
+        "past": "responded",
+        "pastParticiple": "responded",
+        "ing": "responding",
+        "thirdPerson": "responds"
+      }
+    },
+    "examples": [
+      "Please respond to my message when you can.",
+      "The support team responded quickly.",
+      "How did she respond to the news?",
+      "He did not respond to the question.",
+      "The system responds slowly during busy hours."
+    ],
+    "notes": "Common pattern: respond to someone or something.",
+    "synonyms": [
+      "answer",
+      "reply",
+      "react"
+    ],
+    "antonyms": [
+      "ignore",
+      "remain silent"
+    ],
+    "level": "B1",
+    "category": "General"
+  },
+  {
+    "id": "remain",
+    "term": "remain",
+    "translation": "оставаться",
+    "definition": "To stay in the same place or condition, or to continue to exist.",
+    "partOfSpeech": [
+      "verb"
+    ],
+    "displayTerm": "to remain",
+    "verb": {
+      "forms": {
+        "base": "remain",
+        "past": "remained",
+        "pastParticiple": "remained",
+        "ing": "remaining",
+        "thirdPerson": "remains"
+      }
+    },
+    "examples": [
+      "Please remain calm.",
+      "A few problems still remain.",
+      "He remained silent during the discussion.",
+      "The door remained open.",
+      "This question remains important today."
+    ],
+    "notes": "More formal than 'stay' in many contexts.",
+    "synonyms": [
+      "stay",
+      "continue",
+      "persist"
+    ],
+    "antonyms": [
+      "leave",
+      "change",
+      "disappear"
+    ],
+    "level": "B1",
+    "category": "General"
+  },
+  {
+    "id": "relate",
+    "term": "relate",
+    "translation": "относиться, связывать, иметь отношение",
+    "definition": "To show or have a connection between things, or to understand someone's feelings or experience.",
+    "partOfSpeech": [
+      "verb"
+    ],
+    "displayTerm": "to relate",
+    "verb": {
+      "forms": {
+        "base": "relate",
+        "past": "related",
+        "pastParticiple": "related",
+        "ing": "relating",
+        "thirdPerson": "relates"
+      }
+    },
+    "examples": [
+      "This problem relates to our previous discussion.",
+      "I can relate to your situation.",
+      "The report relates the issue to poor communication.",
+      "Many students relate to this example.",
+      "These two topics are closely related."
+    ],
+    "notes": "Common patterns: relate to something; relate something to something.",
+    "synonyms": [
+      "connect",
+      "link",
+      "understand"
+    ],
+    "antonyms": [
+      "separate",
+      "disconnect"
+    ],
+    "level": "B2",
+    "category": "General"
+  },
+  {
+    "id": "involve",
+    "term": "involve",
+    "translation": "включать, вовлекать",
+    "definition": "To include something as a necessary part or to cause someone to take part in something.",
+    "partOfSpeech": [
+      "verb"
+    ],
+    "displayTerm": "to involve",
+    "verb": {
+      "forms": {
+        "base": "involve",
+        "past": "involved",
+        "pastParticiple": "involved",
+        "ing": "involving",
+        "thirdPerson": "involves"
+      }
+    },
+    "examples": [
+      "The job involves a lot of communication.",
+      "Please don't involve me in this argument.",
+      "The project involved several departments.",
+      "Learning a language involves daily practice.",
+      "The process involves three main steps."
+    ],
+    "notes": "Common patterns: involve someone in something; involve doing something.",
+    "synonyms": [
+      "include",
+      "require",
+      "engage"
+    ],
+    "antonyms": [
+      "exclude",
+      "remove"
+    ],
+    "level": "B2",
+    "category": "General"
+  },
+  {
+    "id": "maintain",
+    "term": "maintain",
+    "translation": "поддерживать, сохранять",
+    "definition": "To keep something in good condition or continue something at the same level.",
+    "partOfSpeech": [
+      "verb"
+    ],
+    "displayTerm": "to maintain",
+    "verb": {
+      "forms": {
+        "base": "maintain",
+        "past": "maintained",
+        "pastParticiple": "maintained",
+        "ing": "maintaining",
+        "thirdPerson": "maintains"
+      }
+    },
+    "examples": [
+      "It is important to maintain a healthy routine.",
+      "The company maintained high standards.",
+      "Please maintain eye contact during the interview.",
+      "Regular updates help maintain the system.",
+      "She maintained a positive attitude."
+    ],
+    "notes": "Common collocations: maintain standards, maintain balance, maintain a relationship, maintain a system.",
+    "synonyms": [
+      "keep",
+      "preserve",
+      "support"
+    ],
+    "antonyms": [
+      "neglect",
+      "abandon"
+    ],
+    "level": "B2",
+    "category": "General"
+  },
+  {
+    "id": "perform",
+    "term": "perform",
+    "translation": "выполнять, выступать, исполнять",
+    "definition": "To do a task, action, or piece of work, or to entertain people by acting, singing, or playing music.",
+    "partOfSpeech": [
+      "verb"
+    ],
+    "displayTerm": "to perform",
+    "verb": {
+      "forms": {
+        "base": "perform",
+        "past": "performed",
+        "pastParticiple": "performed",
+        "ing": "performing",
+        "thirdPerson": "performs"
+      }
+    },
+    "examples": [
+      "The team performed well under pressure.",
+      "The doctor performed the operation successfully.",
+      "She performs on stage every weekend.",
+      "This function performs a simple calculation.",
+      "He performed his duties carefully."
+    ],
+    "notes": "Common collocations: perform a task, perform well, perform an operation, perform on stage.",
+    "synonyms": [
+      "do",
+      "carry out",
+      "execute"
+    ],
+    "antonyms": [
+      "neglect",
+      "fail"
+    ],
+    "level": "B2",
+    "category": "General"
+  },
+  {
+    "id": "recover",
+    "term": "recover",
+    "translation": "восстанавливаться, выздоравливать",
+    "definition": "To become healthy, normal, or strong again after illness, difficulty, or loss.",
+    "partOfSpeech": [
+      "verb"
+    ],
+    "displayTerm": "to recover",
+    "verb": {
+      "forms": {
+        "base": "recover",
+        "past": "recovered",
+        "pastParticiple": "recovered",
+        "ing": "recovering",
+        "thirdPerson": "recovers"
+      }
+    },
+    "examples": [
+      "He is recovering from the flu.",
+      "The economy slowly recovered after the crisis.",
+      "She recovered her lost files.",
+      "It took months to recover from the injury.",
+      "The team recovered after a difficult start."
+    ],
+    "notes": "Common pattern: recover from something. Can also mean 'get something back'.",
+    "synonyms": [
+      "get better",
+      "heal",
+      "regain"
+    ],
+    "antonyms": [
+      "worsen",
+      "decline",
+      "lose"
+    ],
+    "level": "B2",
+    "category": "General"
   }
 ]
