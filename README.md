@@ -8,6 +8,7 @@ Simple static vocabulary app. No build step and no backend are required.
 - `main.css` - app styles
 - `main.js` - app logic
 - `words.json` - cards for single words
+- `verbs.json` - cards for verbs
 - `expressions.json` - cards for phrases and expressions
 
 ## Card format

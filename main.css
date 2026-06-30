@@ -307,6 +307,7 @@ h1 {
 }
 
 .word-list,
+.verb-forms,
 .notes {
   display: flex;
   flex-direction: column;
@@ -314,6 +315,7 @@ h1 {
 }
 
 .word-list h3,
+.verb-forms h3,
 .notes h3 {
   margin: 0;
   color: var(--muted);
@@ -321,6 +323,38 @@ h1 {
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.verb-forms {
+  padding: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.verb-forms dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.45rem 0.85rem;
+  margin: 0;
+}
+
+.verb-forms dt,
+.verb-forms dd {
+  margin: 0;
+  line-height: 1.35;
+}
+
+.verb-forms dt {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.verb-forms dd {
+  color: var(--text);
+  font-weight: 800;
+  overflow-wrap: anywhere;
 }
 
 .word-chips {

@@ -4,6 +4,9 @@
     "term": "education",
     "translation": "образование",
     "definition": "The process of learning and gaining knowledge and skills.",
+    "partOfSpeech": [
+      "noun"
+    ],
     "examples": [
       "Education helps people find better jobs.",
       "Every child deserves a good education.",
@@ -12,7 +15,11 @@
       "He works in the field of education."
     ],
     "notes": "Usually uncountable. We say 'an education' when talking about a particular type of education.",
-    "synonyms": ["schooling", "learning", "instruction"],
+    "synonyms": [
+      "schooling",
+      "learning",
+      "instruction"
+    ],
     "antonyms": [],
     "level": "B1",
     "category": "General"
@@ -22,6 +29,9 @@
     "term": "journey",
     "translation": "путешествие",
     "definition": "The act of traveling from one place to another or a process of personal development.",
+    "partOfSpeech": [
+      "noun"
+    ],
     "examples": [
       "Our English journey starts today.",
       "The journey took nearly six hours.",
@@ -30,45 +40,15 @@
       "She shared her journey of becoming a doctor."
     ],
     "notes": "Can be used literally (travel) or figuratively (life experience, learning process).",
-    "synonyms": ["trip", "voyage", "expedition"],
-    "antonyms": ["stay"],
+    "synonyms": [
+      "trip",
+      "voyage",
+      "expedition"
+    ],
+    "antonyms": [
+      "stay"
+    ],
     "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "to-process",
-    "term": "to process",
-    "translation": "обрабатывать",
-    "definition": "To deal with information, requests, or materials in an organized way.",
-    "examples": [
-      "We will process all the applications within two days.",
-      "The system processes thousands of orders every day.",
-      "It takes time to process new information.",
-      "Your payment is being processed.",
-      "The computer can process data very quickly."
-    ],
-    "notes": "Common in business and technology contexts.",
-    "synonyms": ["handle", "deal with", "manage"],
-    "antonyms": ["ignore", "neglect"],
-    "level": "B2",
-    "category": "General"
-  },
-  {
-    "id": "dedicate",
-    "term": "dedicate",
-    "translation": "посвятить, посвящать",
-    "definition": "To give your time, effort, or attention completely to something.",
-    "examples": [
-      "I dedicate my first novel to my father.",
-      "She dedicated her life to helping others.",
-      "He dedicated many years to scientific research.",
-      "You need to dedicate time to learning English.",
-      "The book is dedicated to all teachers."
-    ],
-    "notes": "Often used with 'to': dedicate something to someone; dedicate yourself to something.",
-    "synonyms": ["devote", "commit", "give"],
-    "antonyms": ["neglect", "abandon"],
-    "level": "B2",
     "category": "General"
   },
   {
@@ -76,6 +56,9 @@
     "term": "justice",
     "translation": "справедливость, правосудие, юстиция",
     "definition": "Fair treatment of people according to what is right or lawful.",
+    "partOfSpeech": [
+      "noun"
+    ],
     "examples": [
       "He dedicated his life to fighting for justice.",
       "The victims demanded justice.",
@@ -84,8 +67,15 @@
       "She has a strong sense of justice."
     ],
     "notes": "Usually uncountable.",
-    "synonyms": ["fairness", "equity", "impartiality"],
-    "antonyms": ["injustice", "unfairness"],
+    "synonyms": [
+      "fairness",
+      "equity",
+      "impartiality"
+    ],
+    "antonyms": [
+      "injustice",
+      "unfairness"
+    ],
     "level": "B2",
     "category": "General"
   },
@@ -94,6 +84,9 @@
     "term": "mercy",
     "translation": "милость, милосердие, сострадание",
     "definition": "Kindness and forgiveness shown toward someone whom you could punish.",
+    "partOfSpeech": [
+      "noun"
+    ],
     "examples": [
       "Volunteer work requires mercy and compassion.",
       "The prisoner asked for mercy.",
@@ -102,8 +95,15 @@
       "The judge decided to show mercy."
     ],
     "notes": "Common in religious and legal contexts.",
-    "synonyms": ["kindness", "forgiveness", "clemency"],
-    "antonyms": ["cruelty", "harshness"],
+    "synonyms": [
+      "kindness",
+      "forgiveness",
+      "clemency"
+    ],
+    "antonyms": [
+      "cruelty",
+      "harshness"
+    ],
     "level": "B2",
     "category": "General"
   },
@@ -112,6 +112,9 @@
     "term": "compassion",
     "translation": "сострадание, сочувствие",
     "definition": "A feeling of sympathy and a desire to help people who are suffering.",
+    "partOfSpeech": [
+      "noun"
+    ],
     "examples": [
       "Volunteer work requires mercy and compassion.",
       "She treated her patients with compassion.",
@@ -120,8 +123,15 @@
       "He showed compassion toward the homeless."
     ],
     "notes": "Usually uncountable.",
-    "synonyms": ["sympathy", "empathy", "kindness"],
-    "antonyms": ["cruelty", "indifference"],
+    "synonyms": [
+      "sympathy",
+      "empathy",
+      "kindness"
+    ],
+    "antonyms": [
+      "cruelty",
+      "indifference"
+    ],
     "level": "B2",
     "category": "General"
   },
@@ -130,6 +140,9 @@
     "term": "wholesome",
     "translation": "полезный, здоровый, полноценный",
     "definition": "Good for your health or morally good and positive.",
+    "partOfSpeech": [
+      "adjective"
+    ],
     "examples": [
       "My mother always buys fresh and wholesome food.",
       "The children enjoyed a wholesome family environment.",
@@ -138,27 +151,16 @@
       "She prefers wholesome ingredients."
     ],
     "notes": "Often used with food, lifestyle, and family activities.",
-    "synonyms": ["healthy", "nutritious", "beneficial"],
-    "antonyms": ["unhealthy", "harmful"],
-    "level": "B2",
-    "category": "General"
-  },
-  {
-    "id": "admit",
-    "term": "admit",
-    "translation": "признавать, допускать",
-    "definition": "To say that something is true, especially when it is difficult or embarrassing to say.",
-    "examples": [
-      "I admit that I was wrong.",
-      "He admitted making a mistake.",
-      "She didn't want to admit that she needed help.",
-      "I have to admit that the movie was excellent.",
-      "They finally admitted the truth."
+    "synonyms": [
+      "healthy",
+      "nutritious",
+      "beneficial"
     ],
-    "notes": "Often followed by 'that' or by a gerund (-ing form).",
-    "synonyms": ["acknowledge", "accept", "confess"],
-    "antonyms": ["deny", "reject"],
-    "level": "B1",
+    "antonyms": [
+      "unhealthy",
+      "harmful"
+    ],
+    "level": "B2",
     "category": "General"
   },
   {
@@ -166,6 +168,9 @@
     "term": "research",
     "translation": "исследование",
     "definition": "The careful study of a subject to discover new information.",
+    "partOfSpeech": [
+      "noun"
+    ],
     "examples": [
       "We did a small research project in class.",
       "The company is conducting market research.",
@@ -174,7 +179,11 @@
       "The findings are based on recent research."
     ],
     "notes": "Usually uncountable. We say 'do research' rather than 'make research'.",
-    "synonyms": ["study", "investigation", "analysis"],
+    "synonyms": [
+      "study",
+      "investigation",
+      "analysis"
+    ],
     "antonyms": [],
     "level": "B2",
     "category": "General"
@@ -184,6 +193,9 @@
     "term": "piety",
     "translation": "благочестие, набожность, богобоязненность",
     "definition": "Deep respect for God and a sincere desire to do what is right.",
+    "partOfSpeech": [
+      "noun"
+    ],
     "examples": [
       "Piety is shown not only in worship but also in good character.",
       "His piety inspired many people around him.",
@@ -192,34 +204,26 @@
       "Piety should be reflected in both words and actions."
     ],
     "notes": "Often used in religious contexts to describe devotion and righteous behavior.",
-    "synonyms": ["devotion", "godliness", "righteousness"],
-    "antonyms": ["impiety", "wickedness"],
+    "synonyms": [
+      "devotion",
+      "godliness",
+      "righteousness"
+    ],
+    "antonyms": [
+      "impiety",
+      "wickedness"
+    ],
     "level": "C1",
     "category": "Religion"
-  },
-  {
-    "id": "belong-to",
-    "term": "belong to",
-    "translation": "принадлежать",
-    "definition": "To be owned by someone or to be a member of a group.",
-    "examples": [
-      "This book belongs to my brother.",
-      "These keys belong to me.",
-      "She belongs to a local sports club.",
-      "That phone doesn't belong to me.",
-      "We all want to belong to a community."
-    ],
-    "notes": "Always followed by 'to'.",
-    "synonyms": ["be owned by", "be part of", "be associated with"],
-    "antonyms": [],
-    "level": "B1",
-    "category": "General"
   },
   {
     "id": "honorable",
     "term": "honorable",
     "translation": "почётный, достойный уважения, благородный",
     "definition": "Deserving respect because of honesty, integrity, or good actions.",
+    "partOfSpeech": [
+      "adjective"
+    ],
     "examples": [
       "He is an honorable man who always keeps his promises.",
       "Helping others is an honorable thing to do.",
@@ -228,8 +232,15 @@
       "It is honorable to admit your mistakes."
     ],
     "notes": "British spelling: honourable.",
-    "synonyms": ["respectable", "noble", "upright"],
-    "antonyms": ["dishonorable", "shameful"],
+    "synonyms": [
+      "respectable",
+      "noble",
+      "upright"
+    ],
+    "antonyms": [
+      "dishonorable",
+      "shameful"
+    ],
     "level": "B2",
     "category": "Character"
   },
@@ -238,6 +249,9 @@
     "term": "wealth",
     "translation": "богатство, состояние, достаток",
     "definition": "A large amount of money, possessions, or valuable resources.",
+    "partOfSpeech": [
+      "noun"
+    ],
     "examples": [
       "Wealth alone does not guarantee happiness.",
       "He accumulated great wealth through his business.",
@@ -246,8 +260,14 @@
       "Some people spend their lives chasing wealth."
     ],
     "notes": "Usually an uncountable noun.",
-    "synonyms": ["riches", "fortune", "prosperity"],
-    "antonyms": ["poverty"],
+    "synonyms": [
+      "riches",
+      "fortune",
+      "prosperity"
+    ],
+    "antonyms": [
+      "poverty"
+    ],
     "level": "B2",
     "category": "General"
   },
@@ -256,6 +276,9 @@
     "term": "righteous",
     "translation": "праведный, справедливый, благочестивый",
     "definition": "Morally good and fair, especially according to religious or ethical principles.",
+    "partOfSpeech": [
+      "adjective"
+    ],
     "examples": [
       "He tried to live a righteous life.",
       "A righteous person treats others with honesty and mercy.",
@@ -264,8 +287,16 @@
       "Righteous actions should come from sincere intentions."
     ],
     "notes": "Often used in religious or moral contexts. It can describe a person, action, or way of life.",
-    "synonyms": ["upright", "virtuous", "honorable"],
-    "antonyms": ["wicked", "unjust", "corrupt"],
+    "synonyms": [
+      "upright",
+      "virtuous",
+      "honorable"
+    ],
+    "antonyms": [
+      "wicked",
+      "unjust",
+      "corrupt"
+    ],
     "level": "C1",
     "category": "Character"
   },
@@ -274,6 +305,9 @@
     "term": "human being",
     "translation": "человек, человеческое существо",
     "definition": "A person; a member of the human race.",
+    "partOfSpeech": [
+      "noun"
+    ],
     "examples": [
       "Every human being deserves respect.",
       "A human being needs food, water, and care.",
@@ -282,7 +316,11 @@
       "No human being is perfect."
     ],
     "notes": "More formal or emphatic than 'person'.",
-    "synonyms": ["person", "individual", "human"],
+    "synonyms": [
+      "person",
+      "individual",
+      "human"
+    ],
     "antonyms": [],
     "level": "B1",
     "category": "General"
@@ -292,6 +330,9 @@
     "term": "universe",
     "translation": "вселенная",
     "definition": "All space, time, matter, and energy, including all stars, planets, and galaxies.",
+    "partOfSpeech": [
+      "noun"
+    ],
     "examples": [
       "The universe is incredibly vast.",
       "Scientists study how the universe began.",
@@ -300,34 +341,23 @@
       "We still know very little about the universe."
     ],
     "notes": "Usually used with 'the': the universe.",
-    "synonyms": ["cosmos", "creation", "space"],
+    "synonyms": [
+      "cosmos",
+      "creation",
+      "space"
+    ],
     "antonyms": [],
     "level": "B2",
     "category": "General"
-  },
-  {
-    "id": "be-proud",
-    "term": "be proud",
-    "translation": "гордиться, быть гордым",
-    "definition": "To feel pleased and satisfied because of something you or someone else has done or because of who someone is.",
-    "examples": [
-      "I am proud of your progress.",
-      "She is proud of her children.",
-      "You should be proud of your hard work.",
-      "He was proud to help his family.",
-      "They are proud of their culture."
-    ],
-    "notes": "Often used with 'of': be proud of someone or something. It can be positive, but 'too proud' can mean arrogant.",
-    "synonyms": ["feel pleased", "take pride in", "feel satisfied"],
-    "antonyms": ["be ashamed", "feel embarrassed"],
-    "level": "B1",
-    "category": "Emotions"
   },
   {
     "id": "faith",
     "term": "faith",
     "translation": "вера, доверие",
     "definition": "Strong belief or trust in God, a religion, a person, or an idea.",
+    "partOfSpeech": [
+      "noun"
+    ],
     "examples": [
       "Faith gives many people strength.",
       "She has strong faith in Allah.",
@@ -336,549 +366,16 @@
       "I have faith that things will improve."
     ],
     "notes": "Can mean religious belief or trust in someone or something.",
-    "synonyms": ["belief", "trust", "confidence"],
-    "antonyms": ["doubt", "disbelief"],
+    "synonyms": [
+      "belief",
+      "trust",
+      "confidence"
+    ],
+    "antonyms": [
+      "doubt",
+      "disbelief"
+    ],
     "level": "B2",
     "category": "Religion"
-  },
-  {
-    "id": "achieve",
-    "term": "achieve",
-    "translation": "достигать",
-    "definition": "To successfully reach a goal or accomplish something through effort.",
-    "examples": [
-      "She worked hard to achieve her goals.",
-      "Our team achieved another important milestone.",
-      "You can achieve anything if you stay consistent.",
-      "He finally achieved his dream of becoming a doctor.",
-      "We achieved better performance after the update."
-    ],
-    "notes": "Common collocations: achieve a goal, achieve success, achieve a milestone.",
-    "synonyms": ["accomplish", "reach", "attain"],
-    "antonyms": ["fail", "lose"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "advise",
-    "term": "advise",
-    "translation": "советовать",
-    "definition": "To give someone suggestions or recommendations about what they should do.",
-    "examples": [
-      "I advise you to back up your files.",
-      "She advised me on my career choices.",
-      "The doctor advised him to get more rest.",
-      "Can you advise me on this problem?",
-      "My manager advised us to finish the task early."
-    ],
-    "notes": "Common patterns: advise someone; advise someone to do something; advise someone on something.",
-    "synonyms": ["recommend", "suggest", "guide"],
-    "antonyms": ["discourage", "mislead"],
-    "level": "B2",
-    "category": "General"
-  },
-  {
-    "id": "affect",
-    "term": "affect",
-    "translation": "влиять",
-    "definition": "To have an influence on someone or something.",
-    "examples": [
-      "The weather affected our plans.",
-      "Delays could affect our workflow.",
-      "The promotion might affect customer behavior.",
-      "Lack of sleep affects your concentration.",
-      "This decision will affect everyone in the team."
-    ],
-    "notes": "Usually used as a verb. Don't confuse it with 'effect' (noun).",
-    "synonyms": ["influence", "impact", "change"],
-    "antonyms": ["ignore", "leave unchanged"],
-    "level": "B2",
-    "category": "General"
-  },
-  {
-    "id": "agree",
-    "term": "agree",
-    "translation": "соглашаться",
-    "definition": "To have the same opinion as someone or to accept something.",
-    "examples": [
-      "I completely agree with you.",
-      "We agreed on the final design.",
-      "They agreed to meet next Friday.",
-      "Everyone agreed that it was a good idea.",
-      "Do you agree with this decision?"
-    ],
-    "notes": "Common collocations: agree with someone, agree on something, agree to do something.",
-    "synonyms": ["accept", "approve", "consent"],
-    "antonyms": ["disagree", "object"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "allow",
-    "term": "allow",
-    "translation": "позволять",
-    "definition": "To let someone do something or to make something possible.",
-    "examples": [
-      "The teacher doesn't allow us to use phones during the test.",
-      "This app allows users to save their progress.",
-      "My parents allowed me to stay out late.",
-      "The budget doesn't allow us to hire more people.",
-      "Shopify allows developers to build custom themes."
-    ],
-    "notes": "Common patterns: allow someone to do something; allow something.",
-    "synonyms": ["permit", "let", "enable"],
-    "antonyms": ["forbid", "prevent", "prohibit"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "analyze",
-    "term": "analyze",
-    "translation": "анализировать",
-    "definition": "To examine something carefully in order to understand it or draw conclusions.",
-    "examples": [
-      "We need to analyze the latest technologies.",
-      "The team analyzed the customer feedback.",
-      "Before making a decision, analyze all the available data.",
-      "The developer analyzed the bug before fixing it.",
-      "Scientists analyze results very carefully."
-    ],
-    "notes": "Common collocations: analyze data, analyze results, analyze a situation, analyze performance.",
-    "synonyms": ["examine", "study", "evaluate"],
-    "antonyms": ["ignore", "overlook"],
-    "level": "B2",
-    "category": "General"
-  },
-  {
-    "id": "appear",
-    "term": "appear",
-    "translation": "появляться; казаться",
-    "definition": "To become visible or to seem to be a certain way.",
-    "examples": [
-      "He appeared before us without warning.",
-      "She appeared tired after the meeting.",
-      "A new message appeared on my screen.",
-      "The issue appeared after the latest deployment.",
-      "Everything appeared to be working correctly."
-    ],
-    "notes": "Can mean 'become visible' or 'seem'. Common pattern: appear to be.",
-    "synonyms": ["seem", "emerge", "show up"],
-    "antonyms": ["disappear", "vanish"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "apply",
-    "term": "apply",
-    "translation": "применять; подавать заявку",
-    "definition": "To use something in practice or to formally ask for something such as a job or course.",
-    "examples": [
-      "Apply what you've learned today.",
-      "You should apply pressure to stop the bleeding.",
-      "She applied for a new job.",
-      "These rules apply to everyone.",
-      "I applied the same solution to another project."
-    ],
-    "notes": "Common collocations: apply pressure, apply knowledge, apply for a job, apply to someone/something.",
-    "synonyms": ["use", "implement", "utilize"],
-    "antonyms": ["ignore", "remove"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "appreciate",
-    "term": "appreciate",
-    "translation": "ценить; дорожить",
-    "definition": "To recognize the value of someone or something, or to be grateful for it.",
-    "examples": [
-      "I really appreciate your help.",
-      "We appreciate your honest feedback.",
-      "She appreciates everything her parents have done for her.",
-      "I appreciate you taking the time to explain it.",
-      "Over time, the value of the house appreciated."
-    ],
-    "notes": "Can also mean 'increase in value'. Common phrase: I appreciate it.",
-    "synonyms": ["value", "treasure", "be grateful for"],
-    "antonyms": ["ignore", "take for granted"],
-    "level": "B2",
-    "category": "General"
-  },
-  {
-    "id": "arrange",
-    "term": "arrange",
-    "translation": "организовывать; договариваться",
-    "definition": "To plan or organize something so that it happens in a particular way.",
-    "examples": [
-      "Let's arrange a meeting for tomorrow.",
-      "We arranged to hang out this weekend.",
-      "She arranged the books on the shelf.",
-      "Can you arrange transportation to the airport?",
-      "The manager arranged everything before the event."
-    ],
-    "notes": "Common collocations: arrange a meeting, arrange transportation, arrange to do something.",
-    "synonyms": ["organize", "plan", "schedule"],
-    "antonyms": ["cancel", "disorganize"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "assist",
-    "term": "assist",
-    "translation": "помогать, содействовать",
-    "definition": "To help someone do something or support them in completing a task.",
-    "examples": [
-      "She assisted me with the project.",
-      "The support team assisted customers with technical issues.",
-      "He assisted in organizing the conference.",
-      "Can you assist me with this task?",
-      "The nurse assisted the doctor during the operation."
-    ],
-    "notes": "More formal than 'help'. Common collocations: assist someone with something; assist in doing something.",
-    "synonyms": ["help", "support", "aid"],
-    "antonyms": ["hinder", "obstruct"],
-    "level": "B2",
-    "category": "General"
-  },
-  {
-    "id": "assume",
-    "term": "assume",
-    "translation": "предполагать; брать на себя",
-    "definition": "To believe something is true without proof, or to take responsibility for something.",
-    "examples": [
-      "I assumed you would be busy.",
-      "Don't assume that everyone agrees with you.",
-      "She assumed responsibility for the mistake.",
-      "We assumed the meeting would start on time.",
-      "Never assume anything without checking the facts."
-    ],
-    "notes": "Can mean 'suppose' or 'take responsibility'. Common collocation: assume responsibility.",
-    "synonyms": ["suppose", "presume", "accept"],
-    "antonyms": ["verify", "confirm"],
-    "level": "B2",
-    "category": "General"
-  },
-  {
-    "id": "attend",
-    "term": "attend",
-    "translation": "посещать",
-    "definition": "To go to an event, meeting, class, or other organized activity.",
-    "examples": [
-      "I attended the meeting yesterday.",
-      "Thousands of people attended the event.",
-      "She attends English classes every week.",
-      "Will you attend the conference next month?",
-      "Everyone is expected to attend the training session."
-    ],
-    "notes": "Common collocations: attend a meeting, attend an event, attend school, attend a conference.",
-    "synonyms": ["go to", "participate in", "be present at"],
-    "antonyms": ["miss", "skip"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "avoid",
-    "term": "avoid",
-    "translation": "избегать",
-    "definition": "To stay away from something or prevent something from happening.",
-    "examples": [
-      "I want to avoid talking about it.",
-      "Try to avoid making the same mistake.",
-      "She avoids eating too much sugar.",
-      "We left early to avoid traffic.",
-      "He avoided answering the question."
-    ],
-    "notes": "Usually followed by a noun or a verb ending in '-ing'. Example: avoid doing something.",
-    "synonyms": ["prevent", "escape", "stay away from"],
-    "antonyms": ["face", "approach"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "balance",
-    "term": "balance",
-    "translation": "балансировать; соблюдать баланс",
-    "definition": "To keep different parts or activities in the correct proportion.",
-    "examples": [
-      "It's important to balance work and life.",
-      "She balances her studies with a part-time job.",
-      "It's hard to balance both responsibilities.",
-      "He struggled to balance family and work.",
-      "Good leaders know how to balance different priorities."
-    ],
-    "notes": "Common collocations: balance work and life, balance responsibilities, keep your balance.",
-    "synonyms": ["manage", "equalize", "stabilize"],
-    "antonyms": ["unbalance", "neglect"],
-    "level": "B2",
-    "category": "General"
-  },
-  {
-    "id": "believe",
-    "term": "believe",
-    "translation": "верить",
-    "definition": "To think that something is true or to have confidence in someone or something.",
-    "examples": [
-      "I believe you.",
-      "I believe it's a bad idea.",
-      "She believes that hard work always pays off.",
-      "Do you believe in yourself?",
-      "Many people believe that practice makes perfect."
-    ],
-    "notes": "Common patterns: believe someone; believe that...; believe in someone/something.",
-    "synonyms": ["trust", "accept", "have faith in"],
-    "antonyms": ["doubt", "disbelieve"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "blame",
-    "term": "blame",
-    "translation": "винить",
-    "definition": "To say or think that someone is responsible for something bad.",
-    "examples": [
-      "Don't blame me for that.",
-      "I blame him for missing the meeting.",
-      "She blamed the bad weather for the delay.",
-      "It's easy to blame others for your mistakes.",
-      "Nobody blamed him for the accident."
-    ],
-    "notes": "Common collocation: blame someone for something.",
-    "synonyms": ["accuse", "hold responsible", "criticize"],
-    "antonyms": ["praise", "forgive"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "borrow",
-    "term": "borrow",
-    "translation": "брать взаймы",
-    "definition": "To take something from someone with the intention of returning it later.",
-    "examples": [
-      "Can I borrow your pen?",
-      "He borrowed some money from his friend.",
-      "I borrowed a book from the library.",
-      "May I borrow your laptop until tomorrow?",
-      "She borrowed my charger before the meeting."
-    ],
-    "notes": "Don't confuse 'borrow' with 'lend'. You borrow something FROM someone; someone lends something TO you.",
-    "synonyms": ["take temporarily", "use", "obtain"],
-    "antonyms": ["lend", "return"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "break",
-    "term": "break",
-    "translation": "ломать; нарушать",
-    "definition": "To damage something so it no longer works, or to fail to keep a rule, promise, or agreement.",
-    "examples": [
-      "Be careful not to break the glass.",
-      "He broke his promise.",
-      "Don't break the rules.",
-      "She accidentally broke her phone.",
-      "The company didn't break the contract."
-    ],
-    "notes": "Has many meanings. Common collocations: break a promise, break the rules, break the law, break a record.",
-    "synonyms": ["damage", "violate", "destroy"],
-    "antonyms": ["repair", "fix", "keep"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "calculate",
-    "term": "calculate",
-    "translation": "вычислять, рассчитывать",
-    "definition": "To determine an amount, number, or result by using mathematics or careful thinking.",
-    "examples": [
-      "We calculated the total cost of the project.",
-      "I couldn't calculate how much time I needed.",
-      "The app automatically calculates the price.",
-      "Can you calculate the distance between these cities?",
-      "Engineers calculate everything very carefully."
-    ],
-    "notes": "Common collocations: calculate the cost, calculate the time, calculate the distance.",
-    "synonyms": ["compute", "estimate", "work out"],
-    "antonyms": ["guess", "miscalculate"],
-    "level": "B2",
-    "category": "General"
-  },
-  {
-    "id": "change",
-    "term": "change",
-    "translation": "менять, изменять",
-    "definition": "To make something different or to become different.",
-    "examples": [
-      "She decided to change her hair color.",
-      "I changed my mind after talking to you.",
-      "Technology changes very quickly.",
-      "We need to change our plans because of the weather.",
-      "The update changed the way the application works."
-    ],
-    "notes": "Common collocations: change your mind, change your plans, change your behavior, change your appearance.",
-    "synonyms": ["modify", "alter", "transform"],
-    "antonyms": ["keep", "maintain"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "choose",
-    "term": "choose",
-    "translation": "выбирать",
-    "definition": "To decide which person or thing you want from several options.",
-    "examples": [
-      "She chose a career in medicine.",
-      "It's difficult to choose the right profession.",
-      "You can choose any color you like.",
-      "He chose to stay at home.",
-      "Choose the option that works best for you."
-    ],
-    "notes": "Irregular verb: choose → chose → chosen. Common collocations: choose a career, choose a profession, choose wisely.",
-    "synonyms": ["select", "pick", "decide on"],
-    "antonyms": ["reject", "refuse"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "claim",
-    "term": "claim",
-    "translation": "утверждать, заявлять",
-    "definition": "To say that something is true, often without providing proof.",
-    "examples": [
-      "He claimed that he knew her.",
-      "She claimed she could speak five languages.",
-      "The company claims its product is the fastest.",
-      "He claimed that the mistake wasn't his fault.",
-      "Several witnesses claimed they saw the accident."
-    ],
-    "notes": "Common pattern: claim that... Can also mean to officially request something that belongs to you.",
-    "synonyms": ["state", "assert", "declare"],
-    "antonyms": ["deny", "withdraw"],
-    "level": "B2",
-    "category": "General"
-  },
-  {
-    "id": "communicate",
-    "term": "communicate",
-    "translation": "общаться, передавать информацию",
-    "definition": "To share information, thoughts, or feelings with other people.",
-    "examples": [
-      "Please communicate your concerns clearly.",
-      "Good leaders communicate effectively.",
-      "We communicate with our clients every day.",
-      "It's important to communicate honestly.",
-      "The app allows teams to communicate more efficiently."
-    ],
-    "notes": "Common collocations: communicate clearly, communicate effectively, communicate with someone.",
-    "synonyms": ["express", "convey", "share"],
-    "antonyms": ["hide", "withhold"],
-    "level": "B2",
-    "category": "General"
-  },
-  {
-    "id": "compare",
-    "term": "compare",
-    "translation": "сравнивать",
-    "definition": "To examine two or more things to see how they are similar or different.",
-    "examples": [
-      "Always compare prices before buying.",
-      "Let's compare the two solutions.",
-      "It's unfair to compare yourself with others.",
-      "The report compares this year's results with last year's.",
-      "We compared several frameworks before making a decision."
-    ],
-    "notes": "Common collocations: compare prices, compare results, compare A with B, compare A to B.",
-    "synonyms": ["contrast", "evaluate", "examine"],
-    "antonyms": ["ignore", "separate"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "complain",
-    "term": "complain",
-    "translation": "жаловаться",
-    "definition": "To say that you are unhappy or dissatisfied about something.",
-    "examples": [
-      "Why do you always complain about everything?",
-      "Several customers complained about the delay.",
-      "She never complains about hard work.",
-      "He complained that the room was too cold.",
-      "There's no point in complaining if you don't try to solve the problem."
-    ],
-    "notes": "Common patterns: complain about something; complain that...; complain to someone.",
-    "synonyms": ["criticize", "grumble", "protest"],
-    "antonyms": ["praise", "compliment"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "complete",
-    "term": "complete",
-    "translation": "завершать, заканчивать полностью",
-    "definition": "To finish something successfully so that nothing is left to do.",
-    "examples": [
-      "We completed the project ahead of schedule.",
-      "She completed all her homework before dinner.",
-      "Please complete this form before the meeting.",
-      "The team completed the migration successfully.",
-      "I hope to complete this course by the end of the month."
-    ],
-    "notes": "Common collocations: complete a project, complete a task, complete a form, complete a course.",
-    "synonyms": ["finish", "accomplish", "finalize"],
-    "antonyms": ["begin", "start", "leave unfinished"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "concentrate",
-    "term": "concentrate",
-    "translation": "концентрироваться, сосредотачиваться",
-    "definition": "To give all your attention to something.",
-    "examples": [
-      "Please concentrate on your work.",
-      "I couldn't concentrate because of the noise.",
-      "She concentrated on preparing for the exam.",
-      "Let's concentrate on solving this problem first.",
-      "It's easier to concentrate in a quiet room."
-    ],
-    "notes": "Common collocations: concentrate on something, concentrate fully, concentrate your attention.",
-    "synonyms": ["focus", "pay attention", "devote yourself"],
-    "antonyms": ["distract", "lose focus"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "consider",
-    "term": "consider",
-    "translation": "рассматривать, обдумывать",
-    "definition": "To think carefully about something before making a decision or to regard something in a particular way.",
-    "examples": [
-      "Please consider all your options before deciding.",
-      "I am considering changing my job.",
-      "Many people consider him an excellent teacher.",
-      "Have you considered moving to another city?",
-      "We should consider the long-term effects of this decision."
-    ],
-    "notes": "Can mean 'think about' or 'regard as'. Common collocation: consider your options.",
-    "synonyms": ["think about", "evaluate", "regard"],
-    "antonyms": ["ignore", "disregard"],
-    "level": "B1",
-    "category": "General"
-  },
-  {
-    "id": "convince",
-    "term": "convince",
-    "translation": "убеждать",
-    "definition": "To make someone believe something or persuade them to do something.",
-    "examples": [
-      "She convinced me to join the team.",
-      "Can you convince him that this is the best solution?",
-      "The evidence convinced the jury of his innocence.",
-      "It wasn't easy to convince my parents.",
-      "He finally convinced everyone to support the idea."
-    ],
-    "notes": "Common patterns: convince someone to do something; convince someone of something; convince someone that...",
-    "synonyms": ["persuade", "influence", "win over"],
-    "antonyms": ["discourage", "dissuade"],
-    "level": "B2",
-    "category": "General"
   }
 ]

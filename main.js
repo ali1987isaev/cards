@@ -2,6 +2,7 @@ class EnglishCardsApp {
   constructor() {
     this.sets = {
       words: { label: 'Words', file: './words.json', type: 'word' },
+      verbs: { label: 'Verbs', file: './verbs.json', type: 'verb' },
       expressions: { label: 'Expressions', file: './expressions.json', type: 'expression' }
     };
 
@@ -35,6 +36,7 @@ class EnglishCardsApp {
       examples: document.querySelector('[data-examples]'),
       synonyms: document.querySelector('[data-synonyms]'),
       antonyms: document.querySelector('[data-antonyms]'),
+      verbForms: document.querySelector('[data-verb-forms]'),
       notes: document.querySelector('[data-notes]'),
       extra: document.querySelector('[data-extra]'),
       speakTerm: document.querySelector('[data-speak-term]'),
@@ -72,7 +74,7 @@ class EnglishCardsApp {
     this.nodes.flip?.addEventListener('click', () => this.toggleAnswer());
     this.nodes.prev?.addEventListener('click', () => this.goToCard(this.index - 1));
     this.nodes.next?.addEventListener('click', () => this.goToCard(this.index + 1));
-    this.nodes.speakTerm?.addEventListener('click', () => this.speak(this.currentCard?.term));
+    this.nodes.speakTerm?.addEventListener('click', () => this.speak(this.currentCard?.displayTerm || this.currentCard?.term));
     this.nodes.speakExample?.addEventListener('click', () => this.speak(this.currentCard?.frontExample));
 
     this.nodes.rateButtons.forEach((button) => {
@@ -114,11 +116,15 @@ class EnglishCardsApp {
         : [card.example].filter(Boolean);
       const synonyms = Array.isArray(card.synonyms) ? card.synonyms.filter(Boolean) : [];
       const antonyms = Array.isArray(card.antonyms) ? card.antonyms.filter(Boolean) : [];
+      const partOfSpeech = Array.isArray(card.partOfSpeech) ? card.partOfSpeech.filter(Boolean) : [];
 
       return {
         id,
         type: card.type || fallbackType,
         term,
+        displayTerm: card.displayTerm || term,
+        partOfSpeech,
+        verb: card.verb || null,
         translation: card.translation || card.translate || '',
         definition: card.definition || '',
         examples,
@@ -179,7 +185,7 @@ class EnglishCardsApp {
     this.nodes.card.classList.toggle('is-revealed', this.isRevealed);
     this.nodes.cardType.textContent = `${this.isRevealed ? 'Back' : 'Front'} · ${this.sets[this.activeSet].label}${card.level ? ` · ${card.level}` : ''}`;
     this.nodes.counter.textContent = `${this.index + 1} / ${this.filteredCards.length}`;
-    this.nodes.term.textContent = card.term;
+    this.nodes.term.textContent = card.displayTerm || card.term;
     this.nodes.translation.textContent = card.translation;
     this.nodes.definition.textContent = card.definition || 'Try to understand it from the example sentence.';
     this.nodes.frontExample.textContent = card.frontExample || 'No context sentence yet. Add one example to this card later.';
@@ -188,6 +194,7 @@ class EnglishCardsApp {
     this.nodes.reviewActions?.classList.toggle('hidden', !this.isRevealed);
 
     this.renderExamples(card.examples);
+    this.renderVerbForms(card);
     this.renderWordList(this.nodes.synonyms, 'Synonyms', card.synonyms);
     this.renderWordList(this.nodes.antonyms, 'Antonyms', card.antonyms);
     this.renderNotes(card.notes);
@@ -244,6 +251,42 @@ class EnglishCardsApp {
     });
 
     node.append(heading, chips);
+  }
+
+  renderVerbForms(card) {
+    if (!this.nodes.verbForms) return;
+
+    this.nodes.verbForms.innerHTML = '';
+
+    const forms = card.verb?.forms;
+    const isVerb = card.partOfSpeech?.includes('verb');
+    this.nodes.verbForms.hidden = !isVerb || !forms;
+    if (!isVerb || !forms) return;
+
+    const heading = document.createElement('h3');
+    heading.textContent = 'Verb forms';
+
+    const list = document.createElement('dl');
+    [
+      ['Base', forms.base],
+      ['Past', forms.past],
+      ['Past Participle', forms.pastParticiple],
+      ['-ing', forms.ing],
+      ['3rd Person', forms.thirdPerson]
+    ].forEach(([label, value]) => {
+      if (!value) return;
+
+      const term = document.createElement('dt');
+      term.textContent = label;
+
+      const description = document.createElement('dd');
+      description.className = 'notranslate';
+      description.textContent = value;
+
+      list.append(term, description);
+    });
+
+    this.nodes.verbForms.append(heading, list);
   }
 
   renderNotes(notes) {
